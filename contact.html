@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact — Dan Castillo | Book an intro call</title>
+<meta name="description" content="Book a 30-minute intro call. No pitch deck — just a real conversation about your data stack and what to build next." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/styles.css" />
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+</head>
+<body>
+
+<!-- NAV -->
+<header class="nav">
+  <div class="container" style="display:flex; align-items:center; justify-content:space-between; height:64px;">
+    <a href="index.html" style="display:flex; align-items:center; gap:0.6rem;">
+      <span class="logo-mark">DC</span>
+      <span style="font-weight:600; letter-spacing:-0.02em;">Dan Castillo <span style="color:var(--text-muted); font-weight:400;">/ Data Systems</span></span>
+    </a>
+    <nav class="nav-links-desktop" style="display:flex; align-items:center; gap:0.25rem;">
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link" href="services.html">Services</a>
+      <a class="nav-link" href="work.html">Work</a>
+      <a class="nav-link" href="about.html">About</a>
+      <a class="nav-link active" href="contact.html">Contact</a>
+      <a class="btn btn-primary" href="#contact-form" style="margin-left:0.75rem;">Book an intro call →</a>
+    </nav>
+    <button class="menu-toggle btn btn-secondary" aria-expanded="false" aria-controls="mobileMenu" style="padding:0.5rem 0.75rem;">Menu</button>
+  </div>
+  <div id="mobileMenu" class="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="work.html">Work</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</header>
+
+<!-- HERO + FORM -->
+<section style="position:relative; overflow:hidden;">
+  <div class="grid-bg"></div>
+  <div class="container" style="position:relative; padding-top:5rem; padding-bottom:5rem;">
+    <div style="display:grid; grid-template-columns:1fr 1.2fr; gap:3rem; align-items:start;" class="contact-grid">
+
+      <!-- LEFT: Pitch -->
+      <div class="reveal">
+        <span class="eyebrow">Let's talk</span>
+        <h1 class="h-display text-gradient" style="margin:1.25rem 0 1.5rem;">One call.<br/>Zero pitch deck.</h1>
+        <p style="color:var(--text-dim); font-size:1.125rem; line-height:1.65; max-width:460px;">
+          30 minutes. I'll ask about your stack, your biggest data pain, and the
+          decision you wish you could make faster. By the end, you'll have a
+          clear next step — with or without me.
+        </p>
+
+        <div class="divider" style="margin:2rem 0;"></div>
+
+        <div style="display:grid; gap:1rem;">
+          <div>
+            <div class="eyebrow">What happens next</div>
+            <ol style="margin:1rem 0 0; padding-left:1.25rem; line-height:1.7; color:var(--text-dim);">
+              <li>You send this form. I reply within <strong style="color:var(--text);">24 hours</strong>.</li>
+              <li>We book a 30-minute intro call (Google Meet).</li>
+              <li>If there's a fit, I send a scoped proposal within 3 business days.</li>
+              <li>We agree, sign, start. Most engagements kick off 2–4 weeks out.</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="divider" style="margin:2rem 0;"></div>
+
+        <div style="display:grid; gap:0.75rem;">
+          <div class="eyebrow">Or reach me directly</div>
+          <div style="display:flex; gap:0.75rem; flex-wrap:wrap; margin-top:0.5rem;">
+            <a href="mailto:danc.martin11@gmail.com" class="btn btn-secondary">
+              <span>danc.martin11@gmail.com</span>
+            </a>
+            <button class="btn btn-secondary" data-copy="danc.martin11@gmail.com" data-label="Copy email">Copy email</button>
+          </div>
+          <div style="display:flex; gap:0.75rem; flex-wrap:wrap; margin-top:0.25rem;">
+            <a href="https://www.linkedin.com/in/daniel-alejandro-castillo-mart%C3%ADn-713504219/" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">LinkedIn →</a>
+            <a href="https://github.com/dancmartin11" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">GitHub →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: Form -->
+      <div class="reveal">
+        <div id="contact-success" class="surface" style="display:none; padding:2.5rem; text-align:center;">
+          <div style="width:64px; height:64px; border-radius:50%; background:var(--accent-soft); border:1px solid rgba(52,211,153,0.25); margin:0 auto 1.25rem; display:flex; align-items:center; justify-content:center; font-size:1.5rem; color:var(--accent);">✓</div>
+          <h2 class="h-card" style="margin-bottom:0.5rem;">Message sent. Talk soon.</h2>
+          <p style="color:var(--text-dim); line-height:1.6; max-width:360px; margin:0 auto;">
+            I'll reply within 24 hours (usually much sooner). Meanwhile, you
+            might enjoy the <a href="work.html" style="color:var(--accent);">case studies</a>.
+          </p>
+        </div>
+
+        <form id="contact-form" class="surface" style="padding:clamp(1.5rem, 3vw, 2.5rem); display:grid; gap:1.25rem;">
+          <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.5rem;">
+            <div class="eyebrow">Book an intro call</div>
+            <span style="font-family:var(--font-mono); font-size:0.72rem; color:var(--text-muted);">~2 min to fill</span>
+          </div>
+
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem;" class="form-row">
+            <div class="field">
+              <label for="name">Your name</label>
+              <input id="name" name="name" type="text" placeholder="Jane Doe" required />
+            </div>
+            <div class="field">
+              <label for="email">Work email</label>
+              <input id="email" name="email" type="email" placeholder="jane@company.com" required />
+            </div>
+          </div>
+
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem;" class="form-row">
+            <div class="field">
+              <label for="company">Company</label>
+              <input id="company" name="company" type="text" placeholder="Acme Co." />
+            </div>
+            <div class="field">
+              <label for="role">Your role</label>
+              <input id="role" name="role" type="text" placeholder="Founder, CTO, Head of Data…" />
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="engagement">What are you looking for?</label>
+            <select id="engagement" name="engagement">
+              <option>Data Foundation Sprint (full stack, 4–6 weeks)</option>
+              <option>BI & Data App Build</option>
+              <option>Financial Analytics System</option>
+              <option>Fraud & Risk Intelligence</option>
+              <option>ML Forecasting System</option>
+              <option>Fractional Data Lead (retainer)</option>
+              <option>Not sure yet — let's scope it together</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="stage">Stage / size</label>
+            <select id="stage" name="stage">
+              <option>Pre-seed / seed</option>
+              <option>Series A</option>
+              <option>Series B+</option>
+              <option>Bootstrapped / SME</option>
+              <option>Enterprise / Fintech</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="message">What's the hardest data problem on your plate right now?</label>
+            <textarea id="message" name="message" placeholder="e.g. Our revenue number is different in 3 tools. Closing the month is eating our finance team. We want to ship fraud detection this quarter…" required></textarea>
+          </div>
+
+          <div class="field">
+            <label for="budget">Indicative budget (optional)</label>
+            <select id="budget" name="budget">
+              <option>Not sure yet</option>
+              <option>Under $15k</option>
+              <option>$15k – $40k</option>
+              <option>$40k – $90k</option>
+              <option>$90k+</option>
+              <option>Retainer engagement</option>
+            </select>
+          </div>
+
+          <div style="display:flex; justify-content:space-between; align-items:center; gap:1rem; flex-wrap:wrap; margin-top:0.5rem;">
+            <div style="font-size:0.82rem; color:var(--text-muted); max-width:280px;">
+              I don't share your info. Replies within 24 hours.
+            </div>
+            <button type="submit" class="btn btn-accent" style="padding:0.95rem 1.5rem; font-size:1rem;">Send message →</button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- QUICK REASSURANCE -->
+<section class="section-sm" style="background:var(--bg-elev); border-top:1px solid var(--border); border-bottom:1px solid var(--border);">
+  <div class="container">
+    <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:1.5rem;" class="reassure-grid">
+      <div class="reveal">
+        <div class="eyebrow">Response time</div>
+        <h3 class="h-card" style="margin-top:0.75rem;">&lt; 24 hours, every time.</h3>
+        <p style="color:var(--text-dim); font-size:0.92rem; margin-top:0.5rem; line-height:1.6;">
+          Even if the answer is "not the right fit." No ghosting.
+        </p>
+      </div>
+      <div class="reveal">
+        <div class="eyebrow">No hard sell</div>
+        <h3 class="h-card" style="margin-top:0.75rem;">Intro calls are free.</h3>
+        <p style="color:var(--text-dim); font-size:0.92rem; margin-top:0.5rem; line-height:1.6;">
+          No obligation. If it's not a fit, I'll point you to someone who is.
+        </p>
+      </div>
+      <div class="reveal">
+        <div class="eyebrow">NDA-friendly</div>
+        <h3 class="h-card" style="margin-top:0.75rem;">Comfortable with sensitive data.</h3>
+        <p style="color:var(--text-dim); font-size:0.92rem; margin-top:0.5rem; line-height:1.6;">
+          Signed-NDA engagements, anonymized case studies, GDPR-aware by default.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer style="border-top:1px solid var(--border); padding:3rem 0 2rem; background:var(--bg-elev);">
+  <div class="container">
+    <div style="display:grid; grid-template-columns:2fr 1fr 1fr 1fr; gap:2rem;" class="footer-grid">
+      <div>
+        <div style="display:flex; align-items:center; gap:0.6rem; margin-bottom:0.75rem;">
+          <span class="logo-mark">DC</span>
+          <span style="font-weight:600;">Dan Castillo</span>
+        </div>
+        <p style="color:var(--text-dim); font-size:0.9rem; max-width:320px; line-height:1.6;">
+          Analytics Engineer & Data Scientist.<br/>
+          Building end-to-end data systems for startups, fintech, and SMEs.
+        </p>
+      </div>
+      <div>
+        <div style="font-family:var(--font-mono); font-size:0.72rem; color:var(--text-muted); letter-spacing:0.1em; margin-bottom:0.75rem;">NAVIGATION</div>
+        <a href="services.html" style="display:block; color:var(--text-dim); padding:0.25rem 0;">Services</a>
+        <a href="work.html" style="display:block; color:var(--text-dim); padding:0.25rem 0;">Work</a>
+        <a href="about.html" style="display:block; color:var(--text-dim); padding:0.25rem 0;">About</a>
+        <a href="contact.html" style="display:block; color:var(--text-dim); padding:0.25rem 0;">Contact</a>
+      </div>
+      <div>
+        <div style="font-family:var(--font-mono); font-size:0.72rem; color:var(--text-muted); letter-spacing:0.1em; margin-bottom:0.75rem;">ELSEWHERE</div>
+        <a href="https://www.linkedin.com/in/daniel-alejandro-castillo-mart%C3%ADn-713504219/" target="_blank" rel="noopener noreferrer" style="display:block; color:var(--text-dim); padding:0.25rem 0;">LinkedIn</a>
+        <a href="https://github.com/dancmartin11" target="_blank" rel="noopener noreferrer" style="display:block; color:var(--text-dim); padding:0.25rem 0;">GitHub</a>
+      </div>
+      <div>
+        <div style="font-family:var(--font-mono); font-size:0.72rem; color:var(--text-muted); letter-spacing:0.1em; margin-bottom:0.75rem;">CONTACT</div>
+        <a href="mailto:danc.martin11@gmail.com" style="display:block; color:var(--text-dim); padding:0.25rem 0;">danc.martin11@gmail.com</a>
+        <a href="contact.html" style="display:block; color:var(--accent); padding:0.25rem 0;">Book a call →</a>
+      </div>
+    </div>
+    <div class="divider" style="margin:2.5rem 0 1.5rem;"></div>
+    <div style="display:flex; justify-content:space-between; align-items:center; gap:1rem; flex-wrap:wrap; font-size:0.82rem; color:var(--text-muted);">
+      <div>© <span id="year"></span> Dan Castillo · Built with intent.</div>
+      <div style="font-family:var(--font-mono);">v1.0 · Designed for conversion.</div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/main.js"></script>
+<style>
+  @media (max-width: 960px) {
+    .contact-grid { grid-template-columns: 1fr !important; }
+    .form-row { grid-template-columns: 1fr !important; }
+    .reassure-grid { grid-template-columns: 1fr !important; }
+    .footer-grid { grid-template-columns: 1fr 1fr !important; }
+  }
+</style>
+</body>
+</html>

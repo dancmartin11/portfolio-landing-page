@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Dan Castillo — Analytics Engineer & Data Scientist building end-to-end data systems</title>
+<meta name="description" content="I build end-to-end data systems for startups, fintech, and SMEs — pipelines, models, BI, and production ML. From messy data to decisions that compound." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/styles.css" />
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+</head>
+<body>
+
+<!-- NAV -->
+<header class="nav">
+  <div class="container" style="display:flex; align-items:center; justify-content:space-between; height:64px;">
+    <a href="index.html" style="display:flex; align-items:center; gap:0.6rem;">
+      <span class="logo-mark">DC</span>
+      <span style="font-weight:600; letter-spacing:-0.02em;">Dan Castillo <span style="color:var(--text-muted); font-weight:400;">/ Data Systems</span></span>
+    </a>
+    <nav class="nav-links-desktop" style="display:flex; align-items:center; gap:0.25rem;">
+      <a class="nav-link active" href="index.html">Home</a>
+      <a class="nav-link" href="services.html">Services</a>
+      <a class="nav-link" href="work.html">Work</a>
+      <a class="nav-link" href="about.html">About</a>
+      <a class="nav-link" href="contact.html">Contact</a>
+      <a class="btn btn-primary" href="contact.html" style="margin-left:0.75rem;">Book an intro call →</a>
+    </nav>
+    <button class="menu-toggle btn btn-secondary" aria-expanded="false" aria-controls="mobileMenu" style="padding:0.5rem 0.75rem;">Menu</button>
+  </div>
+  <div id="mobileMenu" class="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="work.html">Work</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a class="btn btn-primary" href="contact.html">Book an intro call →</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section style="position:relative; overflow:hidden;">
+  <div class="grid-bg"></div>
+  <div class="container" style="position:relative; padding-top:6rem; padding-bottom:5rem;">
+    <div style="display:grid; grid-template-columns:repeat(12, 1fr); gap:2rem; align-items:center;">
+      <div style="grid-column: span 12;" class="reveal">
+        <span class="eyebrow">Analytics Engineer · Data Scientist</span>
+        <h1 class="h-display text-gradient" style="margin:1.25rem 0 1.5rem;">
+          Data systems that scale<br/>your decisions — not just your dashboards.
+        </h1>
+        <p style="max-width:640px; color:var(--text-dim); font-size:1.125rem; line-height:1.65;">
+          I build end-to-end data systems for fintech, financial services,
+          and SMEs — data architecture, pipelines, production ML, and the BI
+          foundation operators actually use. Rooted in finance; engineered
+          like software.
+        </p>
+        <div style="display:flex; flex-wrap:wrap; gap:0.75rem; margin-top:2rem;">
+          <a class="btn btn-primary" href="contact.html">Book an intro call →</a>
+          <a class="btn btn-secondary" href="work.html">See selected work</a>
+        </div>
+        <div style="display:flex; flex-wrap:wrap; gap:1rem; margin-top:2.5rem; color:var(--text-muted); font-size:0.875rem;">
+          <span style="display:inline-flex; align-items:center; gap:0.5rem;">
+            <span style="width:8px; height:8px; border-radius:999px; background:var(--accent); box-shadow:0 0 10px var(--accent);"></span>
+            Available for new engagements — Q2 2026
+          </span>
+          <span style="color:var(--border-strong);">|</span>
+          <span>Guadalajara, MX · Remote · LatAm &amp; US time zones</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero "data panel" visual -->
+    <div style="margin-top:4rem; display:grid; grid-template-columns: 1.2fr 1fr; gap:1.25rem;" class="reveal hero-grid">
+      <div class="data-panel">
+        <div style="padding:1rem 1.25rem; display:flex; align-items:center; justify-content:space-between; border-bottom:1px solid var(--border);">
+          <div style="display:flex; align-items:center; gap:0.6rem;">
+            <span class="chip chip-accent">PROD</span>
+            <span style="font-family:var(--font-mono); font-size:0.82rem; color:var(--text-dim);">pipeline.revenue_daily</span>
+          </div>
+          <span style="font-family:var(--font-mono); font-size:0.75rem; color:var(--text-muted);">synced 2m ago</span>
+        </div>
+        <div class="panel-row"><span class="k">source</span><span class="v">stripe · shopify · hubspot</span><span class="pill">3 connectors</span></div>
+        <div class="panel-row"><span class="k">transform</span><span class="v">dbt · 47 models · tested</span><span class="pill">100% pass</span></div>
+        <div class="panel-row"><span class="k">warehouse</span><span class="v">snowflake.analytics</span><span class="pill">healthy</span></div>
+        <div class="panel-row"><span class="k">consumers</span><span class="v">Power BI · Streamlit · API</span><span class="pill">live</span></div>
+        <div class="panel-row"><span class="k">freshness</span><span class="v">SLA met · p95 4m 12s</span><span class="pill">on target</span></div>
+      </div>
+      <div class="data-panel" style="display:flex; flex-direction:column;">
+        <div style="padding:1rem 1.25rem; border-bottom:1px solid var(--border); display:flex; justify-content:space-between; align-items:center;">
+          <div>
+            <div style="font-family:var(--font-mono); font-size:0.72rem; color:var(--text-muted); letter-spacing:0.1em; text-transform:uppercase;">Monthly active metric</div>
+            <div style="margin-top:0.25rem; font-weight:600; font-size:1.1rem;">Decision velocity</div>
+          </div>
+          <div style="text-align:right;">
+            <div style="font-size:1.35rem; font-weight:600;">+312%</div>
+            <div style="font-size:0.75rem; color:var(--accent);">vs. baseline</div>
+          </div>
+        </div>
+        <div class="bar-chart" aria-hidden="true">
+          <div class="bar" style="height:22%"></div>
+          <div class="bar" style="height:35%"></div>
+          <div class="bar" style="height:28%"></div>
+          <div class="bar" style="height:48%"></div>
+          <div class="bar" style="height:42%"></div>
+          <div class="bar" style="height:55%"></div>
+          <div class="bar" style="height:62%"></div>
+          <div class="bar" style="height:58%"></div>
+          <div class="bar" style="height:72%"></div>
+          <div class="bar" style="height:80%"></div>
+          <div class="bar" style="height:88%"></div>
+          <div class="bar" style="height:96%"></div>
+        </div>
+        <div style="padding:0.6rem 1.25rem 1rem; font-family:var(--font-mono); font-size:0.72rem; color:var(--text-muted); display:flex; justify-content:space-between;">
+          <span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span><span>May</span><span>Jun</span><span>Jul</span><span>Aug</span><span>Sep</span><span>Oct</span><span>Nov</span><span>Dec</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOCIAL PROOF / LOGO STRIP -->
+<section style="border-top:1px solid var(--border); border-bottom:1px solid var(--border); background:var(--bg-elev);">
+  <div class="container" style="padding:2rem 1.5rem;">
+    <div style="display:flex; justify-content:space-between; align-items:center; gap:1rem; margin-bottom:1.25rem; flex-wrap:wrap;">
+      <span class="eyebrow">Teams I've built data systems for</span>
+      <span style="font-family:var(--font-mono); font-size:0.75rem; color:var(--text-muted);">Fintech · Financial services · Leasing · Agribusiness</span>
+    </div>
+    <div class="marquee-wrap">
+      <div class="marquee">
+        <!-- Repeated twice for seamless scroll -->
+        <span style="color:var(--text-dim); font-weight:600; font-size:1.25rem; letter-spacing:-0.02em;">Arrendamex</span>
+        <span style="color:var(--text-dim); font-weight:600; font-size:1.25rem;">Inveravocados Jalmich</span>
+        <span style="color:var(--text-dim); font-family:var(--font-mono); font-weight:500; font-size:1.1rem;">NDA · Fintech &amp; Financial Services</span>
+        <span style="color:var(--text-dim); font-family:var(--font-mono); font-weight:500; font-size:1.1rem;">NDA · Production ML</span>
+        <span style="color:var(--text-dim); font-family:var(--font-mono); font-weight:500; font-size:1.1rem;">NDA · Fraud &amp; Risk</span>
+        <span style="color:var(--text-dim); font-family:var(--font-mono); font-weight:500; font-size:1.1rem;">NDA · Recovery &amp; Reconciliation</span>
+
+        <span style="color:var(--text-dim); font-weight:600; font-size:1.25rem; letter-spacing:-0.02em;">Arrendamex</span>
+        <span style="color:var(--text-dim); font-weight:600; font-size:1.25rem;">Inveravocados Jalmich</span>
+        <span style="color:var(--text-dim); font-family:var(--font-mono); font-weight:500; font-size:1.1rem;">NDA · Fintech &amp; Financial Services</span>
+        <span style="color:var(--text-dim); font-family:var(--font-mono); font-weight:500; font-size:1.1rem;">NDA · Production ML</span>
+        <span style="color:var(--text-dim); font-family:var(--font-mono); font-weight:500; font-size:1.1rem;">NDA · Fraud &amp; Risk</span>
+        <span style="color:var(--text-dim); font-family:var(--font-mono); font-weight:500; font-size:1.1rem;">NDA · Recovery &amp; Reconciliation</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VALUE SECTION: Why hire me -->
+<section class="section">
+  <div class="container">
+    <div style="display:grid; grid-template-columns:repeat(12, 1fr); gap:2rem; align-items:end; margin-bottom:3rem;">
+      <div style="grid-column: span 8;" class="reveal">
+        <span class="eyebrow">What I actually do</span>
+        <h2 class="h-section" style="margin-top:1rem;">I don't analyze data.<br/>I build the systems your company runs on.</h2>
+      </div>
+      <p style="grid-column: span 4; color:var(--text-dim); line-height:1.65;" class="reveal">
+        Most teams don't need another dashboard — they need the
+        infrastructure, models, and workflows that make trustworthy data
+        a <em>default</em>, not a quarterly project.
+      </p>
+    </div>
+
+    <div style="display:grid; grid-template-columns:repeat(12, 1fr); gap:1.25rem;">
+      <div class="surface surface-hover reveal" style="grid-column: span 4; padding:1.75rem;">
+        <div class="chip">01 · Foundation</div>
+        <h3 class="h-card" style="margin:1rem 0 0.5rem;">Pipelines & data models</h3>
+        <p style="color:var(--text-dim); font-size:0.95rem; line-height:1.6;">
+          ELT/ETL on Azure Data, Databricks, dbt. Versioned, tested,
+          documented. Your data becomes a product, not a liability.
+        </p>
+      </div>
+      <div class="surface surface-hover reveal" style="grid-column: span 4; padding:1.75rem;">
+        <div class="chip">02 · Interface</div>
+        <h3 class="h-card" style="margin:1rem 0 0.5rem;">BI & data apps</h3>
+        <p style="color:var(--text-dim); font-size:0.95rem; line-height:1.6;">
+          Power BI and Streamlit apps engineered for the operators who actually
+          use them. Fast, opinionated, owned by someone.
+        </p>
+      </div>
+      <div class="surface surface-hover reveal" style="grid-column: span 4; padding:1.75rem;">
+        <div class="chip">03 · Intelligence</div>
+        <h3 class="h-card" style="margin:1rem 0 0.5rem;">ML & financial analytics</h3>
+        <p style="color:var(--text-dim); font-size:0.95rem; line-height:1.6;">
+          Forecasting, fraud detection, and FP&A systems in production — not
+          notebooks. Signals that drive operations.
+        </p>
+      </div>
+    </div>
+
+    <div style="margin-top:2rem;">
+      <a href="services.html" class="arrow-link">Explore all services <span class="arrow">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- HOW I WORK / PROCESS -->
+<section class="section" style="background:var(--bg-elev); border-top:1px solid var(--border); border-bottom:1px solid var(--border);">
+  <div class="container">
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:3rem; align-items:start;">
+      <div class="reveal">
+        <span class="eyebrow">How I work</span>
+        <h2 class="h-section" style="margin:1rem 0 1.25rem;">Engineered like software.<br/>Shipped like a startup.</h2>
+        <p style="color:var(--text-dim); line-height:1.65; max-width:520px;">
+          I work in short, scoped sprints with clear deliverables. Every
+          engagement ships real infrastructure — not slide decks. You end
+          with systems your team can own, extend, and trust.
+        </p>
+        <div style="margin-top:2rem;">
+          <a href="services.html" class="btn btn-secondary">See how engagements are scoped</a>
+        </div>
+      </div>
+      <div class="timeline reveal">
+        <div class="timeline-item">
+          <div style="font-family:var(--font-mono); font-size:0.72rem; color:var(--accent); letter-spacing:0.1em;">WEEK 1</div>
+          <h4 class="h-card" style="margin:0.4rem 0;">Audit & architecture</h4>
+          <p style="color:var(--text-dim); font-size:0.92rem;">Map the current stack, sources, and pain. Define the target system and north-star metrics.</p>
+        </div>
+        <div class="timeline-item">
+          <div style="font-family:var(--font-mono); font-size:0.72rem; color:var(--accent); letter-spacing:0.1em;">WEEK 2–4</div>
+          <h4 class="h-card" style="margin:0.4rem 0;">Foundation sprint</h4>
+          <p style="color:var(--text-dim); font-size:0.92rem;">Pipelines, warehouse, models, tests, CI. First trustworthy dataset shipped to production.</p>
+        </div>
+        <div class="timeline-item">
+          <div style="font-family:var(--font-mono); font-size:0.72rem; color:var(--accent); letter-spacing:0.1em;">WEEK 4–8</div>
+          <h4 class="h-card" style="margin:0.4rem 0;">Interface & activation</h4>
+          <p style="color:var(--text-dim); font-size:0.92rem;">Dashboards, data apps, or ML in production. Stakeholders using it weekly.</p>
+        </div>
+        <div class="timeline-item" style="padding-bottom:0;">
+          <div style="font-family:var(--font-mono); font-size:0.72rem; color:var(--accent); letter-spacing:0.1em;">ONGOING</div>
+          <h4 class="h-card" style="margin:0.4rem 0;">Handover or fractional lead</h4>
+          <p style="color:var(--text-dim); font-size:0.92rem;">Full documentation and enablement, or stay on as your fractional data lead.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- KPIs -->
+<section class="section-sm">
+  <div class="container">
+    <div style="display:grid; grid-template-columns:repeat(4, 1fr); gap:1.5rem;" class="kpi-grid">
+      <div class="reveal">
+        <div class="kpi-num accent-text">50M+ MXN</div>
+        <div class="kpi-label">Delinquent portfolio recovered (fintech NDA)</div>
+      </div>
+      <div class="reveal">
+        <div class="kpi-num">&lt;15%</div>
+        <div class="kpi-label">MAPE on production financial-flow forecasts</div>
+      </div>
+      <div class="reveal">
+        <div class="kpi-num">Real-time</div>
+        <div class="kpi-label">Fraud alerts wired into the risk team's workflow</div>
+      </div>
+      <div class="reveal">
+        <div class="kpi-num">End-to-end</div>
+        <div class="kpi-label">Data systems shipped in fintech &amp; leasing</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SELECTED WORK -->
+<section class="section">
+  <div class="container">
+    <div style="display:flex; justify-content:space-between; align-items:end; flex-wrap:wrap; gap:1.5rem; margin-bottom:3rem;">
+      <div class="reveal">
+        <span class="eyebrow">Selected work</span>
+        <h2 class="h-section" style="margin-top:1rem;">Case studies, not screenshots.</h2>
+      </div>
+      <a href="work.html" class="arrow-link">All case studies <span class="arrow">→</span></a>
+    </div>
+
+    <div style="display:grid; grid-template-columns:repeat(12, 1fr); gap:1.25rem;">
+      <!-- Case 1 -->
+      <a href="work.html#arrendamex" class="surface surface-hover reveal" style="grid-column: span 7; padding:2rem; display:flex; flex-direction:column; justify-content:space-between; min-height:340px;">
+        <div>
+          <div style="display:flex; gap:0.5rem; flex-wrap:wrap; margin-bottom:1.25rem;">
+            <span class="chip chip-accent">Leasing · Fintech</span>
+            <span class="chip">Data architecture</span>
+            <span class="chip">Digital transformation</span>
+            <span class="chip" style="color:var(--accent); background:var(--accent-soft); border-color:rgba(52,211,153,0.25);">In progress</span>
+          </div>
+          <h3 style="font-size:1.6rem; letter-spacing:-0.02em; font-weight:600; margin:0 0 0.75rem;">Arrendamex — building the data foundation for a leasing fintech</h3>
+          <p style="color:var(--text-dim); line-height:1.6; max-width:540px;">
+            Leading the design and implementation of the data architecture,
+            ETL/ELT pipelines, and BI foundation powering a full digital
+            transformation.
+          </p>
+        </div>
+        <div style="display:flex; gap:2rem; margin-top:2rem;">
+          <div><div class="kpi-num" style="font-size:1.5rem;">0 → 1</div><div class="kpi-label" style="font-size:0.8rem;">Data architecture</div></div>
+          <div><div class="kpi-num" style="font-size:1.5rem;">ETL/ELT</div><div class="kpi-label" style="font-size:0.8rem;">Pipelines in production</div></div>
+          <div><div class="kpi-num" style="font-size:1.5rem;">BI</div><div class="kpi-label" style="font-size:0.8rem;">Foundation standardized</div></div>
+        </div>
+      </a>
+
+      <!-- Case 2 -->
+      <a href="work.html#fintech-recovery" class="surface surface-hover reveal" style="grid-column: span 5; padding:2rem; display:flex; flex-direction:column; justify-content:space-between; min-height:340px;">
+        <div>
+          <div style="display:flex; gap:0.5rem; flex-wrap:wrap; margin-bottom:1.25rem;">
+            <span class="chip">Fintech · Financial services</span>
+            <span class="chip">Data engineering</span>
+            <span class="chip">NDA</span>
+          </div>
+          <h3 style="font-size:1.4rem; letter-spacing:-0.02em; font-weight:600; margin:0 0 0.75rem;">Fintech (NDA) — reconciliation engine that recovered 50M+ MXN</h3>
+          <p style="color:var(--text-dim); line-height:1.6;">
+            SQL/Python matching engine + redesigned recovery operations. Led
+            negotiations using engine output as leverage.
+          </p>
+        </div>
+        <div style="display:flex; gap:1.5rem; margin-top:1.5rem;">
+          <div><div class="kpi-num" style="font-size:1.3rem;">50M+ MXN</div><div class="kpi-label" style="font-size:0.8rem;">Recovered</div></div>
+          <div><div class="kpi-num" style="font-size:1.3rem;">↓ SLAs</div><div class="kpi-label" style="font-size:0.8rem;">Follow-up cycles</div></div>
+        </div>
+      </a>
+
+      <!-- Case 3 -->
+      <a href="work.html#fintech-ml" class="surface surface-hover reveal" style="grid-column: span 5; padding:2rem; min-height:260px; display:flex; flex-direction:column; justify-content:space-between;">
+        <div>
+          <div style="display:flex; gap:0.5rem; flex-wrap:wrap; margin-bottom:1.25rem;">
+            <span class="chip">Fintech · Financial services</span>
+            <span class="chip">Production ML</span>
+            <span class="chip">NDA</span>
+          </div>
+          <h3 style="font-size:1.4rem; letter-spacing:-0.02em; font-weight:600; margin:0 0 0.75rem;">Fintech (NDA) — forecasting critical financial flows at &lt;15% MAPE</h3>
+          <p style="color:var(--text-dim); line-height:1.6;">
+            End-to-end ML pipeline + real-time fraud detection alerts to the
+            risk team.
+          </p>
+        </div>
+        <div style="display:flex; gap:1.5rem; margin-top:1.5rem;">
+          <div><div class="kpi-num" style="font-size:1.3rem;">&lt;15%</div><div class="kpi-label" style="font-size:0.8rem;">MAPE in production</div></div>
+          <div><div class="kpi-num" style="font-size:1.3rem;">Real-time</div><div class="kpi-label" style="font-size:0.8rem;">Fraud alerts</div></div>
+        </div>
+      </a>
+
+      <!-- Case 4 -->
+      <a href="work.html#inveravocados" class="surface surface-hover reveal" style="grid-column: span 7; padding:2rem; min-height:260px; display:flex; flex-direction:column; justify-content:space-between;">
+        <div>
+          <div style="display:flex; gap:0.5rem; flex-wrap:wrap; margin-bottom:1.25rem;">
+            <span class="chip">Agribusiness SME</span>
+            <span class="chip">Forecasting</span>
+            <span class="chip">Streamlit</span>
+          </div>
+          <h3 style="font-size:1.4rem; letter-spacing:-0.02em; font-weight:600; margin:0 0 0.75rem;">Inveravocados Jalmich — harvest &amp; distribution forecasting operators use</h3>
+          <p style="color:var(--text-dim); line-height:1.6; max-width:540px;">
+            Weekly SKU-level forecasts in a Streamlit app ops teams actually
+            open on Monday mornings.
+          </p>
+        </div>
+        <div style="display:flex; gap:2rem; margin-top:1.5rem;">
+          <div><div class="kpi-num" style="font-size:1.3rem;">-35%</div><div class="kpi-label" style="font-size:0.8rem;">Stockouts</div></div>
+          <div><div class="kpi-num" style="font-size:1.3rem;">+19%</div><div class="kpi-label" style="font-size:0.8rem;">Margin</div></div>
+          <div><div class="kpi-num" style="font-size:1.3rem;">4,200</div><div class="kpi-label" style="font-size:0.8rem;">SKUs forecasted</div></div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- TRACK RECORD -->
+<section class="section" style="background:var(--bg-elev); border-top:1px solid var(--border); border-bottom:1px solid var(--border);">
+  <div class="container">
+    <div style="margin-bottom:3rem;" class="reveal">
+      <span class="eyebrow">Track record</span>
+      <h2 class="h-section" style="margin-top:1rem;">Measurable outcomes,<br/>shipped in production.</h2>
+    </div>
+    <div style="display:grid; grid-template-columns:repeat(12, 1fr); gap:1.25rem;">
+      <div class="surface reveal" style="grid-column: span 6; padding:2rem;">
+        <div class="kpi-num accent-text" style="font-size:2.2rem;">50M+ MXN</div>
+        <div style="margin-top:0.5rem; font-weight:600;">Delinquent portfolio recovered</div>
+        <p style="margin-top:0.5rem; color:var(--text-dim); line-height:1.6;">
+          Built an automated SQL/Python reconciliation engine at a fintech
+          (NDA), then led data-driven negotiations with delinquent
+          counterparties.
+        </p>
+      </div>
+      <div class="surface reveal" style="grid-column: span 6; padding:2rem;">
+        <div class="kpi-num accent-text" style="font-size:2.2rem;">&lt;15% MAPE</div>
+        <div style="margin-top:0.5rem; font-weight:600;">Production ML in financial services</div>
+        <p style="margin-top:0.5rem; color:var(--text-dim); line-height:1.6;">
+          End-to-end pipeline forecasting critical financial flows at a
+          fintech (NDA) — from ingestion to delivery, with automated
+          retraining.
+        </p>
+      </div>
+      <div class="surface reveal" style="grid-column: span 4; padding:1.75rem;">
+        <div class="eyebrow" style="color:var(--accent);">Real-time</div>
+        <div style="margin-top:0.5rem; font-weight:600;">Fraud detection alerts</div>
+        <p style="margin-top:0.5rem; color:var(--text-dim); line-height:1.55; font-size:0.95rem;">
+          Automated SQL/Python flags suspicious transactions and notifies
+          the risk team directly — early warning where there was none.
+        </p>
+      </div>
+      <div class="surface reveal" style="grid-column: span 4; padding:1.75rem;">
+        <div class="eyebrow" style="color:var(--accent);">Leadership</div>
+        <div style="margin-top:0.5rem; font-weight:600;">Team + BI leadership</div>
+        <p style="margin-top:0.5rem; color:var(--text-dim); line-height:1.55; font-size:0.95rem;">
+          Led a conciliation team, mentored entry-level analysts, and
+          introduced new KPIs, SLAs, and documentation practices adopted
+          company-wide.
+        </p>
+      </div>
+      <div class="surface reveal" style="grid-column: span 4; padding:1.75rem;">
+        <div class="eyebrow" style="color:var(--accent);">Finance-native</div>
+        <div style="margin-top:0.5rem; font-weight:600;">Rooted in the business</div>
+        <p style="margin-top:0.5rem; color:var(--text-dim); line-height:1.55; font-size:0.95rem;">
+          BBA in Financial Administration &amp; Information Systems
+          (GPA 96.88, Outstanding on EGEL-ADMON) — I speak finance, risk,
+          and ops as natively as I write SQL.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="section">
+  <div class="container">
+    <div class="surface reveal" style="padding:clamp(2rem, 5vw, 4rem); position:relative; overflow:hidden;">
+      <div style="position:absolute; inset:0; background:radial-gradient(600px 260px at 90% 0%, rgba(52,211,153,0.1), transparent 60%); pointer-events:none;"></div>
+      <div style="position:relative; display:grid; grid-template-columns:1.3fr 1fr; gap:3rem; align-items:center;" class="cta-grid">
+        <div>
+          <span class="eyebrow">Let's build</span>
+          <h2 class="h-section" style="margin:1rem 0 1rem;">You have messy data.<br/>Let's turn it into a system that compounds.</h2>
+          <p style="color:var(--text-dim); line-height:1.65; max-width:520px;">
+            30-minute intro call. No pitch deck. We'll diagnose the highest-leverage
+            system to build next — and whether I'm the right person to build it.
+          </p>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:0.75rem;">
+          <a href="contact.html" class="btn btn-accent" style="padding:1rem 1.25rem; font-size:1rem;">Book an intro call →</a>
+          <a href="mailto:danc.martin11@gmail.com" class="btn btn-secondary" style="padding:1rem 1.25rem;">danc.martin11@gmail.com</a>
+          <div style="font-family:var(--font-mono); font-size:0.72rem; color:var(--text-muted); text-align:center; margin-top:0.25rem;">
+            Typical reply in under 24 hours.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer style="border-top:1px solid var(--border); padding:3rem 0 2rem; background:var(--bg-elev);">
+  <div class="container">
+    <div style="display:grid; grid-template-columns:2fr 1fr 1fr 1fr; gap:2rem;" class="footer-grid">
+      <div>
+        <div style="display:flex; align-items:center; gap:0.6rem; margin-bottom:0.75rem;">
+          <span class="logo-mark">DC</span>
+          <span style="font-weight:600;">Dan Castillo</span>
+        </div>
+        <p style="color:var(--text-dim); font-size:0.9rem; max-width:320px; line-height:1.6;">
+          Analytics Engineer & Data Scientist.<br/>
+          Building end-to-end data systems for startups, fintech, and SMEs.
+        </p>
+      </div>
+      <div>
+        <div style="font-family:var(--font-mono); font-size:0.72rem; color:var(--text-muted); letter-spacing:0.1em; margin-bottom:0.75rem;">NAVIGATION</div>
+        <a href="services.html" style="display:block; color:var(--text-dim); padding:0.25rem 0;">Services</a>
+        <a href="work.html" style="display:block; color:var(--text-dim); padding:0.25rem 0;">Work</a>
+        <a href="about.html" style="display:block; color:var(--text-dim); padding:0.25rem 0;">About</a>
+        <a href="contact.html" style="display:block; color:var(--text-dim); padding:0.25rem 0;">Contact</a>
+      </div>
+      <div>
+        <div style="font-family:var(--font-mono); font-size:0.72rem; color:var(--text-muted); letter-spacing:0.1em; margin-bottom:0.75rem;">ELSEWHERE</div>
+        <a href="https://www.linkedin.com/in/daniel-alejandro-castillo-mart%C3%ADn-713504219/" target="_blank" rel="noopener noreferrer" style="display:block; color:var(--text-dim); padding:0.25rem 0;">LinkedIn</a>
+        <a href="https://github.com/dancmartin11" target="_blank" rel="noopener noreferrer" style="display:block; color:var(--text-dim); padding:0.25rem 0;">GitHub</a>
+      </div>
+      <div>
+        <div style="font-family:var(--font-mono); font-size:0.72rem; color:var(--text-muted); letter-spacing:0.1em; margin-bottom:0.75rem;">CONTACT</div>
+        <a href="mailto:danc.martin11@gmail.com" style="display:block; color:var(--text-dim); padding:0.25rem 0;">danc.martin11@gmail.com</a>
+        <a href="contact.html" style="display:block; color:var(--accent); padding:0.25rem 0;">Book a call →</a>
+      </div>
+    </div>
+    <div class="divider" style="margin:2.5rem 0 1.5rem;"></div>
+    <div style="display:flex; justify-content:space-between; align-items:center; gap:1rem; flex-wrap:wrap; font-size:0.82rem; color:var(--text-muted);">
+      <div>© <span id="year"></span> Dan Castillo · Built with intent.</div>
+      <div style="font-family:var(--font-mono);">v1.0 · Designed for conversion.</div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/main.js"></script>
+<style>
+  @media (max-width: 960px) {
+    .hero-grid { grid-template-columns: 1fr !important; }
+    .kpi-grid { grid-template-columns: repeat(2, 1fr) !important; }
+    .cta-grid { grid-template-columns: 1fr !important; }
+    .footer-grid { grid-template-columns: 1fr 1fr !important; }
+    [style*="grid-column: span 4"],
+    [style*="grid-column: span 5"],
+    [style*="grid-column: span 6"],
+    [style*="grid-column: span 7"],
+    [style*="grid-column: span 8"] { grid-column: span 12 !important; }
+  }
+</style>
+</body>
+</html>

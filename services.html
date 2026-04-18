@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Services — Dan Castillo | Productized data engagements</title>
+<meta name="description" content="Productized data engagements: foundation sprints, BI systems, financial analytics, fraud detection, ML, and fractional data leadership." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/styles.css" />
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+</head>
+<body>
+
+<!-- NAV -->
+<header class="nav">
+  <div class="container" style="display:flex; align-items:center; justify-content:space-between; height:64px;">
+    <a href="index.html" style="display:flex; align-items:center; gap:0.6rem;">
+      <span class="logo-mark">DC</span>
+      <span style="font-weight:600; letter-spacing:-0.02em;">Dan Castillo <span style="color:var(--text-muted); font-weight:400;">/ Data Systems</span></span>
+    </a>
+    <nav class="nav-links-desktop" style="display:flex; align-items:center; gap:0.25rem;">
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link active" href="services.html">Services</a>
+      <a class="nav-link" href="work.html">Work</a>
+      <a class="nav-link" href="about.html">About</a>
+      <a class="nav-link" href="contact.html">Contact</a>
+      <a class="btn btn-primary" href="contact.html" style="margin-left:0.75rem;">Book an intro call →</a>
+    </nav>
+    <button class="menu-toggle btn btn-secondary" aria-expanded="false" aria-controls="mobileMenu" style="padding:0.5rem 0.75rem;">Menu</button>
+  </div>
+  <div id="mobileMenu" class="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="work.html">Work</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a class="btn btn-primary" href="contact.html">Book an intro call →</a>
+  </div>
+</header>
+
+<!-- HEADER -->
+<section style="position:relative; overflow:hidden;">
+  <div class="grid-bg"></div>
+  <div class="container" style="position:relative; padding-top:5rem; padding-bottom:3rem;">
+    <div class="reveal" style="max-width:780px;">
+      <span class="eyebrow">Productized engagements</span>
+      <h1 class="h-display text-gradient" style="margin:1.25rem 0 1.5rem;">Scoped. Shipped.<br/>Owned.</h1>
+      <p style="color:var(--text-dim); font-size:1.125rem; line-height:1.65;">
+        Six productized engagements. Every one delivers real infrastructure — not
+        slide decks. Fixed scope, fixed timeline, clear outcomes. Pick where
+        your business hurts most.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE CARDS -->
+<section class="section-sm">
+  <div class="container">
+    <div style="display:grid; gap:1.25rem;">
+
+      <!-- 01 Data Foundation Sprint -->
+      <article class="surface reveal" style="padding:clamp(1.5rem, 3vw, 2.5rem);">
+        <div style="display:grid; grid-template-columns:1fr 1.4fr; gap:2.5rem;" class="svc-grid">
+          <div>
+            <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:1.25rem;">
+              <span class="chip chip-accent">01</span>
+              <span style="font-family:var(--font-mono); font-size:0.75rem; color:var(--text-muted); letter-spacing:0.1em;">FLAGSHIP · 4–6 WEEKS</span>
+            </div>
+            <h2 style="font-size:1.9rem; letter-spacing:-0.025em; font-weight:600; line-height:1.15;">Data Foundation Sprint</h2>
+            <p style="color:var(--text-dim); margin-top:1rem; line-height:1.65;">
+              The full data stack, shipped in six weeks. For companies where
+              "our data" currently means spreadsheets and Slack messages.
+            </p>
+            <div style="display:flex; flex-wrap:wrap; gap:0.5rem; margin-top:1.25rem;">
+              <span class="chip">Azure Data</span>
+              <span class="chip">dbt</span>
+              <span class="chip">Databricks</span>
+              <span class="chip">Power BI</span>
+            </div>
+            <div style="margin-top:2rem; display:flex; gap:0.75rem; flex-wrap:wrap;">
+              <a href="contact.html" class="btn btn-accent">Scope this engagement →</a>
+            </div>
+          </div>
+          <div style="display:grid; gap:1.25rem;">
+            <div>
+              <div class="eyebrow" style="color:#ef4444;">The problem</div>
+              <p style="margin-top:0.5rem; color:var(--text); line-height:1.6;">
+                Data scattered across SaaS tools and spreadsheets. No single source of
+                truth. Every metric is a debate. Reporting is a weekly crisis.
+              </p>
+            </div>
+            <div>
+              <div class="eyebrow">What I deliver</div>
+              <ul style="margin:0.5rem 0 0 0; padding:0; list-style:none; display:grid; gap:0.5rem; color:var(--text-dim); line-height:1.55;">
+                <li style="display:flex; gap:0.6rem;"><span style="color:var(--accent);">▸</span> Source-to-warehouse ELT pipelines (Azure Data Factory / Fivetran)</li>
+                <li style="display:flex; gap:0.6rem;"><span style="color:var(--accent);">▸</span> Dimensional data models in dbt — tested, versioned, documented</li>
+                <li style="display:flex; gap:0.6rem;"><span style="color:var(--accent);">▸</span> Core business metrics layer (revenue, retention, CAC, etc.)</li>
+                <li style="display:flex; gap:0.6rem;"><span style="color:var(--accent);">▸</span> First production dashboards in Power BI</li>
+                <li style="display:flex; gap:0.6rem;"><span style="color:var(--accent);">▸</span> CI, data tests, freshness SLAs, runbooks</li>
+              </ul>
+            </div>
+            <div>
+              <div class="eyebrow" style="color:var(--accent);">The outcome</div>
+              <p style="margin-top:0.5rem; color:var(--text); line-height:1.6;">
+                A trustworthy, production-grade data foundation your team
+                owns. Board-ready metrics in week six.
+              </p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 02 BI & Data Apps -->
+      <article class="surface reveal" style="padding:clamp(1.5rem, 3vw, 2.5rem);">
+        <div style="display:grid; grid-template-columns:1fr 1.4fr; gap:2.5rem;" class="svc-grid">
+          <div>
+            <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:1.25rem;">
+              <span class="chip">02</span>
+              <span style="font-family:var(--font-mono); font-size:0.75rem; color:var(--text-muted); letter-spacing:0.1em;">3–5 WEEKS</span>
+            </div>
+            <h2 style="font-size:1.9rem; letter-spacing:-0.025em; font-weight:600; line-height:1.15;">BI & Data App Build</h2>
+            <p style="color:var(--text-dim); margin-top:1rem; line-height:1.65;">
+              Interfaces operators use daily. Not report graveyards.
+            </p>
+            <div style="display:flex; flex-wrap:wrap; gap:0.5rem; margin-top:1.25rem;">
+              <span class="chip">Power BI</span>
+              <span class="chip">Streamlit</span>
+              <span class="chip">Python</span>
+            </div>
+            <div style="margin-top:2rem;">
+              <a href="contact.html" class="btn btn-secondary">Scope this →</a>
+            </div>
+          </div>
+          <div style="display:grid; gap:1.25rem;">
+            <div>
+              <div class="eyebrow" style="color:#ef4444;">The problem</div>
+              <p style="margin-top:0.5rem; color:var(--text); line-height:1.6;">
+                You have dashboards. Nobody opens them. Decisions are still made
+                on gut, or by one engineer running ad-hoc SQL.
+              </p>
+            </div>
+            <div>
+              <div class="eyebrow">What I deliver</div>
+              <ul style="margin:0.5rem 0 0 0; padding:0; list-style:none; display:grid; gap:0.5rem; color:var(--text-dim); line-height:1.55;">
+                <li style="display:flex; gap:0.6rem;"><span style="color:var(--accent);">▸</span> User research with the operators who'll actually use it</li>
+                <li style="display:flex; gap:0.6rem;"><span style="color:var(--accent);">▸</span> Power BI dashboards with drill-through and role-based access</li>
+                <li style="display:flex; gap:0.6rem;"><span style="color:var(--accent);">▸</span> Or: a custom Streamlit data app with auth, workflows, and actions</li>
+                <li style="display:flex; gap:0.6rem;"><span style="color:var(--accent);">▸</span> Semantic model layer so every number is defined once</li>
+                <li style="display:flex; gap:0.6rem;"><span style="color:var(--accent);">▸</span> Training session + owner handover</li>
+              </ul>
+            </div>
+            <div>
+              <div class="eyebrow" style="color:var(--accent);">The outcome</div>
+              <p style="margin-top:0.5rem; color:var(--text); line-height:1.6;">
+                Weekly active usage by the people making the calls. Less Slack,
+                fewer CSVs, faster decisions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 03 Financial Analytics -->
+      <article class="surface reveal" style="padding:clamp(1.5rem, 3vw, 2.5rem);">
+        <div style="display:grid; grid-template-columns:1fr 1.4fr; gap:2.5rem;" class="svc-grid">
+          <div>
+            <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:1.25rem;">
+              <span class="chip">03</span>
+              <span style="font-family:var(--font-mono); font-size:0.75rem; color:var(--text-muted); letter-spacing:0.1em;">4–8 WEEKS</span>
+            </div>
+            <h2 style="font-size:1.9rem; letter-spacing:-0.025em; font-weight:600; line-height:1.15;">Financial Analytics System</h2>
+            <p style="color:var(--text-dim); margin-top:1rem; line-height:1.65;">
+              FP&A, unit economics, and board reporting — engineered.
+            </p>
+            <div style="display:flex; flex-wrap:wrap; gap:0.5rem; margin-top:1.25rem;">
+              <span class="chip">FP&A</span>
+              <span class="chip">Unit economics</span>
+              <span class="chip">Board reporting</span>
+            </div>
+            <div style="margin-top:2rem;">
+              <a href="contact.html" class="btn btn-secondary">Scope this →</a>
+            </div>
+          </div>
+          <div style="display:grid; gap:1.25rem;">
+            <div>
+              <div class="eyebrow" style="color:#ef4444;">The problem</div>
+              <p style="margin-top:0.5rem; color:var(--text); line-height:1.6;">
+                Finance closes the month in spreadsheets. Unit economics exist
+                only on one analyst's laptop. The board deck is rebuilt from scratch every quarter.
+              </p>
+            </div>
+            <div>
+              <div class="eyebrow">What I deliver</div>
+              <ul style="margin:0.5rem 0 0 0; padding:0; list-style:none; display:grid; gap:0.5rem; color:var(--text-dim); line-height:1.55;">
+                <li style="display:flex; gap:0.6rem;"><span style="color:var(--accent);">▸</span> Revenue, cost, and cashflow models in the warehouse</li>
+                <li style="display:flex; gap:0.6rem;"><span style="color:var(--accent);">▸</span> LTV, CAC, payback, contribution margin — unified, definitional</li>
+                <li style="display:flex; gap:0.6rem;"><span style="color:var(--accent);">▸</span> Automated close-support reports and board dashboards</li>
+                <li style="display:flex; gap:0.6rem;"><span style="color:var(--accent);">▸</span> Scenario / forecasting layer for FP&A</li>
+              </ul>
+            </div>
+            <div>
+              <div class="eyebrow" style="color:var(--accent);">The outcome</div>
+              <p style="margin-top:0.5rem; color:var(--text); line-height:1.6;">
+                Close cycles cut in half. Always-on board metrics. Finance and
+                ops arguing about strategy, not numbers.
+              </p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 04 Fraud & Risk -->
+      <article class="surface reveal" style="padding:clamp(1.5rem, 3vw, 2.5rem);">
+        <div style="display:grid; grid-template-columns:1fr 1.4fr; gap:2.5rem;" class="svc-grid">
+          <div>
+            <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:1.25rem;">
+              <span class="chip">04</span>
+              <span style="font-family:var(--font-mono); font-size:0.75rem; color:var(--text-muted); letter-spacing:0.1em;">6–10 WEEKS</span>
+            </div>
+            <h2 style="font-size:1.9rem; letter-spacing:-0.025em; font-weight:600; line-height:1.15;">Fraud & Risk Intelligence</h2>
+            <p style="color:var(--text-dim); margin-top:1rem; line-height:1.65;">
+              Detection systems for fintech, payments, and marketplaces.
+            </p>
+            <div style="display:flex; flex-wrap:wrap; gap:0.5rem; margin-top:1.25rem;">
+              <span class="chip">Streaming ML</span>
+              <span class="chip">Databricks</span>
+              <span class="chip">Rules + models</span>
+            </div>
+            <div style="margin-top:2rem;">
+              <a href="contact.html" class="btn btn-secondary">Scope this →</a>
+            </div>
+          </div>
+          <div style="display:grid; gap:1.25rem;">
+            <div>
+              <div class="eyebrow" style="color:#ef4444;">The problem</div>
+              <p style="margin-top:0.5rem; color:var(--text); line-height:1.6;">
+                Chargebacks, fraud, and abuse are eating margin. Rules are
+                brittle and investigators are drowning in false positives.
+              </p>
+            </div>
+            <div>
+              <div class="eyebrow">What I deliver</div>
+              <ul style="margin:0.5rem 0 0 0; padding:0; list-style:none; display:grid; gap:0.5rem; color:var(--text-dim); line-height:1.55;">
+                <li style="display:flex; gap:0.6rem;"><span style="color:var(--accent);">▸</span> Feature store + labeled history from your existing events</li>
+                <li style="display:flex; gap:0.6rem;"><span style="color:var(--accent);">▸</span> ML models in production scoring in real time or batch</li>
+                <li style="display:flex; gap:0.6rem;"><span style="color:var(--accent);">▸</span> Rules + models orchestration layer (hybrid decisioning)</li>
+                <li style="display:flex; gap:0.6rem;"><span style="color:var(--accent);">▸</span> Analyst workbench: case review, feedback loop, model monitoring</li>
+              </ul>
+            </div>
+            <div>
+              <div class="eyebrow" style="color:var(--accent);">The outcome</div>
+              <p style="margin-top:0.5rem; color:var(--text); line-height:1.6;">
+                Measurable reduction in fraud losses. Fewer false positives.
+                Risk ops that scale without headcount.
+              </p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 05 ML Forecasting -->
+      <article class="surface reveal" style="padding:clamp(1.5rem, 3vw, 2.5rem);">
+        <div style="display:grid; grid-template-columns:1fr 1.4fr; gap:2.5rem;" class="svc-grid">
+          <div>
+            <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:1.25rem;">
+              <span class="chip">05</span>
+              <span style="font-family:var(--font-mono); font-size:0.75rem; color:var(--text-muted); letter-spacing:0.1em;">6–8 WEEKS</span>
+            </div>
+            <h2 style="font-size:1.9rem; letter-spacing:-0.025em; font-weight:600; line-height:1.15;">ML Forecasting System</h2>
+            <p style="color:var(--text-dim); margin-top:1rem; line-height:1.65;">
+              Demand, revenue, churn, and capacity forecasts — in production.
+            </p>
+            <div style="display:flex; flex-wrap:wrap; gap:0.5rem; margin-top:1.25rem;">
+              <span class="chip">Forecasting</span>
+              <span class="chip">MLflow</span>
+              <span class="chip">Streamlit</span>
+            </div>
+            <div style="margin-top:2rem;">
+              <a href="contact.html" class="btn btn-secondary">Scope this →</a>
+            </div>
+          </div>
+          <div style="display:grid; gap:1.25rem;">
+            <div>
+              <div class="eyebrow" style="color:#ef4444;">The problem</div>
+              <p style="margin-top:0.5rem; color:var(--text); line-height:1.6;">
+                Forecasts live in an analyst's notebook. They're accurate
+                once, outdated weekly, and ops is flying blind.
+              </p>
+            </div>
+            <div>
+              <div class="eyebrow">What I deliver</div>
+              <ul style="margin:0.5rem 0 0 0; padding:0; list-style:none; display:grid; gap:0.5rem; color:var(--text-dim); line-height:1.55;">
+                <li style="display:flex; gap:0.6rem;"><span style="color:var(--accent);">▸</span> Forecasting models trained on your warehoused history</li>
+                <li style="display:flex; gap:0.6rem;"><span style="color:var(--accent);">▸</span> Automated retraining pipeline + accuracy tracking</li>
+                <li style="display:flex; gap:0.6rem;"><span style="color:var(--accent);">▸</span> Streamlit or Power BI interface for operators</li>
+                <li style="display:flex; gap:0.6rem;"><span style="color:var(--accent);">▸</span> Scenario override + human-in-the-loop controls</li>
+              </ul>
+            </div>
+            <div>
+              <div class="eyebrow" style="color:var(--accent);">The outcome</div>
+              <p style="margin-top:0.5rem; color:var(--text); line-height:1.6;">
+                Planning decisions anchored in math, not memory. Forecasts
+                that improve themselves.
+              </p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 06 Fractional Lead -->
+      <article class="surface reveal" style="padding:clamp(1.5rem, 3vw, 2.5rem); background:linear-gradient(180deg, var(--surface) 0%, #0d1916 100%); border-color:rgba(52,211,153,0.2);">
+        <div style="display:grid; grid-template-columns:1fr 1.4fr; gap:2.5rem;" class="svc-grid">
+          <div>
+            <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:1.25rem;">
+              <span class="chip chip-accent">06 · RETAINER</span>
+              <span style="font-family:var(--font-mono); font-size:0.75rem; color:var(--text-muted); letter-spacing:0.1em;">MONTHLY · 3-MONTH MIN</span>
+            </div>
+            <h2 style="font-size:1.9rem; letter-spacing:-0.025em; font-weight:600; line-height:1.15;">Fractional Data Lead</h2>
+            <p style="color:var(--text-dim); margin-top:1rem; line-height:1.65;">
+              For teams that need senior data leadership without a full-time hire.
+            </p>
+            <div style="display:flex; flex-wrap:wrap; gap:0.5rem; margin-top:1.25rem;">
+              <span class="chip">Strategy</span>
+              <span class="chip">Architecture</span>
+              <span class="chip">Hiring</span>
+            </div>
+            <div style="margin-top:2rem;">
+              <a href="contact.html" class="btn btn-accent">Explore a retainer →</a>
+            </div>
+          </div>
+          <div style="display:grid; gap:1.25rem;">
+            <div>
+              <div class="eyebrow" style="color:#ef4444;">The problem</div>
+              <p style="margin-top:0.5rem; color:var(--text); line-height:1.6;">
+                You have engineers shipping data work, but no one is making
+                architectural decisions, protecting the roadmap, or growing the team.
+              </p>
+            </div>
+            <div>
+              <div class="eyebrow">What I deliver</div>
+              <ul style="margin:0.5rem 0 0 0; padding:0; list-style:none; display:grid; gap:0.5rem; color:var(--text-dim); line-height:1.55;">
+                <li style="display:flex; gap:0.6rem;"><span style="color:var(--accent);">▸</span> Weekly strategy + architecture sessions with leadership</li>
+                <li style="display:flex; gap:0.6rem;"><span style="color:var(--accent);">▸</span> Roadmap ownership, priority calls, vendor decisions</li>
+                <li style="display:flex; gap:0.6rem;"><span style="color:var(--accent);">▸</span> Hiring loop: JDs, interview kits, technical screens</li>
+                <li style="display:flex; gap:0.6rem;"><span style="color:var(--accent);">▸</span> Hands-on when the stack needs a senior pair of eyes</li>
+              </ul>
+            </div>
+            <div>
+              <div class="eyebrow" style="color:var(--accent);">The outcome</div>
+              <p style="margin-top:0.5rem; color:var(--text); line-height:1.6;">
+                A data org that runs on strategy, not reactions. When you're
+                ready to hire a full-time lead, the role is defined and the
+                bench is built.
+              </p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- COMPARISON TABLE -->
+<section class="section" style="background:var(--bg-elev); border-top:1px solid var(--border); border-bottom:1px solid var(--border);">
+  <div class="container">
+    <div style="margin-bottom:3rem; max-width:640px;" class="reveal">
+      <span class="eyebrow">How to choose</span>
+      <h2 class="h-section" style="margin-top:1rem;">Pick the engagement that matches your stage.</h2>
+    </div>
+    <div class="surface reveal" style="padding:0; overflow-x:auto;">
+      <table class="cmp-table">
+        <thead>
+          <tr>
+            <th>Engagement</th>
+            <th class="center">No data team yet</th>
+            <th class="center">Messy stack</th>
+            <th class="center">Need board-ready metrics</th>
+            <th class="center">Need production ML</th>
+            <th class="center">Typical length</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="font-weight:600;">Foundation Sprint</td>
+            <td class="center check">●</td>
+            <td class="center check">●</td>
+            <td class="center check">●</td>
+            <td class="center cross">—</td>
+            <td class="center" style="font-family:var(--font-mono); color:var(--text-dim);">4–6 wk</td>
+          </tr>
+          <tr>
+            <td style="font-weight:600;">BI & Data Apps</td>
+            <td class="center cross">—</td>
+            <td class="center check">●</td>
+            <td class="center check">●</td>
+            <td class="center cross">—</td>
+            <td class="center" style="font-family:var(--font-mono); color:var(--text-dim);">3–5 wk</td>
+          </tr>
+          <tr>
+            <td style="font-weight:600;">Financial Analytics</td>
+            <td class="center cross">—</td>
+            <td class="center check">●</td>
+            <td class="center check">●</td>
+            <td class="center cross">—</td>
+            <td class="center" style="font-family:var(--font-mono); color:var(--text-dim);">4–8 wk</td>
+          </tr>
+          <tr>
+            <td style="font-weight:600;">Fraud & Risk</td>
+            <td class="center cross">—</td>
+            <td class="center cross">—</td>
+            <td class="center cross">—</td>
+            <td class="center check">●</td>
+            <td class="center" style="font-family:var(--font-mono); color:var(--text-dim);">6–10 wk</td>
+          </tr>
+          <tr>
+            <td style="font-weight:600;">ML Forecasting</td>
+            <td class="center cross">—</td>
+            <td class="center cross">—</td>
+            <td class="center check">●</td>
+            <td class="center check">●</td>
+            <td class="center" style="font-family:var(--font-mono); color:var(--text-dim);">6–8 wk</td>
+          </tr>
+          <tr>
+            <td style="font-weight:600;">Fractional Lead</td>
+            <td class="center check">●</td>
+            <td class="center check">●</td>
+            <td class="center check">●</td>
+            <td class="center check">●</td>
+            <td class="center" style="font-family:var(--font-mono); color:var(--text-dim);">Monthly</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section">
+  <div class="container">
+    <div style="display:grid; grid-template-columns:1fr 2fr; gap:3rem; align-items:start;" class="faq-grid">
+      <div class="reveal">
+        <span class="eyebrow">FAQ</span>
+        <h2 class="h-section" style="margin-top:1rem;">Things clients ask before we start.</h2>
+      </div>
+      <div style="display:grid; gap:1rem;">
+        <details class="surface reveal" style="padding:1.5rem 1.75rem;">
+          <summary style="font-weight:600; cursor:pointer; list-style:none;">Do you work solo or with a team?</summary>
+          <p style="margin:1rem 0 0; color:var(--text-dim); line-height:1.65;">
+            Solo for most engagements — that's why I keep scope tight and senior.
+            For larger builds I bring in a trusted network of specialists
+            (BI, ML ops, infra) that I lead directly.
+          </p>
+        </details>
+        <details class="surface reveal" style="padding:1.5rem 1.75rem;">
+          <summary style="font-weight:600; cursor:pointer; list-style:none;">What stacks do you work with?</summary>
+          <p style="margin:1rem 0 0; color:var(--text-dim); line-height:1.65;">
+            Azure Data, Databricks, Snowflake, dbt, Python, SQL, Power BI,
+            Streamlit. If you're on AWS or GCP, I'll tell you honestly whether
+            the job is a good fit.
+          </p>
+        </details>
+        <details class="surface reveal" style="padding:1.5rem 1.75rem;">
+          <summary style="font-weight:600; cursor:pointer; list-style:none;">How are engagements priced?</summary>
+          <p style="margin:1rem 0 0; color:var(--text-dim); line-height:1.65;">
+            Fixed-scope, fixed-fee for productized engagements. Retainers for
+            fractional leadership. No hourly billing — you pay for outcomes.
+          </p>
+        </details>
+        <details class="surface reveal" style="padding:1.5rem 1.75rem;">
+          <summary style="font-weight:600; cursor:pointer; list-style:none;">What does "handover" actually mean?</summary>
+          <p style="margin:1rem 0 0; color:var(--text-dim); line-height:1.65;">
+            Full documentation, CI, runbooks, tests, and a named owner on your
+            side. If your team can't run the system a month after I leave,
+            I haven't done my job.
+          </p>
+        </details>
+        <details class="surface reveal" style="padding:1.5rem 1.75rem;">
+          <summary style="font-weight:600; cursor:pointer; list-style:none;">When can you start?</summary>
+          <p style="margin:1rem 0 0; color:var(--text-dim); line-height:1.65;">
+            Usually within 2–4 weeks of the scoping call. I take 1–2 engagements
+            in parallel to stay senior on every one.
+          </p>
+        </details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section-sm">
+  <div class="container">
+    <div class="surface reveal" style="padding:clamp(2rem, 5vw, 3.5rem); text-align:center;">
+      <h2 class="h-section" style="max-width:640px; margin:0 auto 1rem;">Not sure which engagement fits?</h2>
+      <p style="color:var(--text-dim); max-width:520px; margin:0 auto 2rem; line-height:1.6;">
+        Book a 30-minute call. I'll diagnose the system that will move your
+        business furthest — and tell you honestly if it's not something I
+        should build.
+      </p>
+      <a href="contact.html" class="btn btn-accent" style="padding:1rem 1.5rem; font-size:1rem;">Book an intro call →</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer style="border-top:1px solid var(--border); padding:3rem 0 2rem; background:var(--bg-elev);">
+  <div class="container">
+    <div style="display:grid; grid-template-columns:2fr 1fr 1fr 1fr; gap:2rem;" class="footer-grid">
+      <div>
+        <div style="display:flex; align-items:center; gap:0.6rem; margin-bottom:0.75rem;">
+          <span class="logo-mark">DC</span>
+          <span style="font-weight:600;">Dan Castillo</span>
+        </div>
+        <p style="color:var(--text-dim); font-size:0.9rem; max-width:320px; line-height:1.6;">
+          Analytics Engineer & Data Scientist.<br/>
+          Building end-to-end data systems for startups, fintech, and SMEs.
+        </p>
+      </div>
+      <div>
+        <div style="font-family:var(--font-mono); font-size:0.72rem; color:var(--text-muted); letter-spacing:0.1em; margin-bottom:0.75rem;">NAVIGATION</div>
+        <a href="services.html" style="display:block; color:var(--text-dim); padding:0.25rem 0;">Services</a>
+        <a href="work.html" style="display:block; color:var(--text-dim); padding:0.25rem 0;">Work</a>
+        <a href="about.html" style="display:block; color:var(--text-dim); padding:0.25rem 0;">About</a>
+        <a href="contact.html" style="display:block; color:var(--text-dim); padding:0.25rem 0;">Contact</a>
+      </div>
+      <div>
+        <div style="font-family:var(--font-mono); font-size:0.72rem; color:var(--text-muted); letter-spacing:0.1em; margin-bottom:0.75rem;">ELSEWHERE</div>
+        <a href="https://www.linkedin.com/in/daniel-alejandro-castillo-mart%C3%ADn-713504219/" target="_blank" rel="noopener noreferrer" style="display:block; color:var(--text-dim); padding:0.25rem 0;">LinkedIn</a>
+        <a href="https://github.com/dancmartin11" target="_blank" rel="noopener noreferrer" style="display:block; color:var(--text-dim); padding:0.25rem 0;">GitHub</a>
+      </div>
+      <div>
+        <div style="font-family:var(--font-mono); font-size:0.72rem; color:var(--text-muted); letter-spacing:0.1em; margin-bottom:0.75rem;">CONTACT</div>
+        <a href="mailto:danc.martin11@gmail.com" style="display:block; color:var(--text-dim); padding:0.25rem 0;">danc.martin11@gmail.com</a>
+        <a href="contact.html" style="display:block; color:var(--accent); padding:0.25rem 0;">Book a call →</a>
+      </div>
+    </div>
+    <div class="divider" style="margin:2.5rem 0 1.5rem;"></div>
+    <div style="display:flex; justify-content:space-between; align-items:center; gap:1rem; flex-wrap:wrap; font-size:0.82rem; color:var(--text-muted);">
+      <div>© <span id="year"></span> Dan Castillo · Built with intent.</div>
+      <div style="font-family:var(--font-mono);">v1.0 · Designed for conversion.</div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/main.js"></script>
+<style>
+  @media (max-width: 960px) {
+    .svc-grid { grid-template-columns: 1fr !important; gap: 1.5rem !important; }
+    .faq-grid { grid-template-columns: 1fr !important; }
+    .footer-grid { grid-template-columns: 1fr 1fr !important; }
+  }
+</style>
+</body>
+</html>

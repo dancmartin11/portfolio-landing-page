@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Work — Dan Castillo | Case studies in data systems</title>
+<meta name="description" content="Selected case studies: fraud detection at fintech scale, zero-to-one data foundations, financial analytics platforms, and demand forecasting." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/styles.css" />
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+</head>
+<body>
+
+<!-- NAV -->
+<header class="nav">
+  <div class="container" style="display:flex; align-items:center; justify-content:space-between; height:64px;">
+    <a href="index.html" style="display:flex; align-items:center; gap:0.6rem;">
+      <span class="logo-mark">DC</span>
+      <span style="font-weight:600; letter-spacing:-0.02em;">Dan Castillo <span style="color:var(--text-muted); font-weight:400;">/ Data Systems</span></span>
+    </a>
+    <nav class="nav-links-desktop" style="display:flex; align-items:center; gap:0.25rem;">
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link" href="services.html">Services</a>
+      <a class="nav-link active" href="work.html">Work</a>
+      <a class="nav-link" href="about.html">About</a>
+      <a class="nav-link" href="contact.html">Contact</a>
+      <a class="btn btn-primary" href="contact.html" style="margin-left:0.75rem;">Book an intro call →</a>
+    </nav>
+    <button class="menu-toggle btn btn-secondary" aria-expanded="false" aria-controls="mobileMenu" style="padding:0.5rem 0.75rem;">Menu</button>
+  </div>
+  <div id="mobileMenu" class="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="work.html">Work</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a class="btn btn-primary" href="contact.html">Book an intro call →</a>
+  </div>
+</header>
+
+<!-- HEADER -->
+<section style="position:relative; overflow:hidden;">
+  <div class="grid-bg"></div>
+  <div class="container" style="position:relative; padding-top:5rem; padding-bottom:3rem;">
+    <div class="reveal" style="max-width:780px;">
+      <span class="eyebrow">Case studies</span>
+      <h1 class="h-display text-gradient" style="margin:1.25rem 0 1.5rem;">Systems I've built.<br/>Outcomes they drove.</h1>
+      <p style="color:var(--text-dim); font-size:1.125rem; line-height:1.65;">
+        A selection of recent engagements — problem, approach, technical
+        solution, and measurable impact. Names and exact numbers anonymized
+        where NDA applies.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- INDEX TABLE -->
+<section class="section-sm">
+  <div class="container">
+    <div class="surface reveal" style="padding:0; overflow:hidden;">
+      <div style="display:grid; grid-template-columns:1fr 1fr 1fr 1fr 120px; padding:1rem 1.5rem; border-bottom:1px solid var(--border); font-family:var(--font-mono); font-size:0.72rem; color:var(--text-muted); letter-spacing:0.1em;" class="idx-row">
+        <div>CLIENT</div>
+        <div>INDUSTRY</div>
+        <div>ENGAGEMENT</div>
+        <div>HEADLINE RESULT</div>
+        <div style="text-align:right;">YEAR</div>
+      </div>
+      <a href="#fintech-recovery" class="idx-row" style="display:grid; grid-template-columns:1fr 1fr 1fr 1fr 120px; padding:1.1rem 1.5rem; border-bottom:1px solid var(--border); color:var(--text); transition:background 160ms;">
+        <div style="font-weight:600;">Fintech <span style="color:var(--text-muted); font-weight:400; font-size:0.82rem;">· NDA</span></div>
+        <div style="color:var(--text-dim);">Fintech · Financial services</div>
+        <div style="color:var(--text-dim);">Reconciliation &amp; recovery</div>
+        <div style="color:var(--accent); font-family:var(--font-mono); font-size:0.9rem;">50M+ MXN recovered</div>
+        <div style="text-align:right; color:var(--text-muted); font-family:var(--font-mono); font-size:0.85rem;">2025</div>
+      </a>
+      <a href="#fintech-ml" class="idx-row" style="display:grid; grid-template-columns:1fr 1fr 1fr 1fr 120px; padding:1.1rem 1.5rem; border-bottom:1px solid var(--border); color:var(--text);">
+        <div style="font-weight:600;">Fintech <span style="color:var(--text-muted); font-weight:400; font-size:0.82rem;">· NDA</span></div>
+        <div style="color:var(--text-dim);">Fintech · Financial services</div>
+        <div style="color:var(--text-dim);">Production ML + fraud</div>
+        <div style="color:var(--accent); font-family:var(--font-mono); font-size:0.9rem;">&lt;15% MAPE · real-time alerts</div>
+        <div style="text-align:right; color:var(--text-muted); font-family:var(--font-mono); font-size:0.85rem;">2023–25</div>
+      </a>
+      <a href="#arrendamex" class="idx-row" style="display:grid; grid-template-columns:1fr 1fr 1fr 1fr 120px; padding:1.1rem 1.5rem; border-bottom:1px solid var(--border); color:var(--text);">
+        <div style="font-weight:600;">Arrendamex</div>
+        <div style="color:var(--text-dim);">Leasing · Fintech</div>
+        <div style="color:var(--text-dim);">Data foundation</div>
+        <div style="color:var(--accent); font-family:var(--font-mono); font-size:0.9rem;">Architecture, ETL/ELT, BI</div>
+        <div style="text-align:right; color:var(--text-muted); font-family:var(--font-mono); font-size:0.85rem;">2025→</div>
+      </a>
+      <a href="#inveravocados" class="idx-row" style="display:grid; grid-template-columns:1fr 1fr 1fr 1fr 120px; padding:1.1rem 1.5rem; color:var(--text);">
+        <div style="font-weight:600;">Inveravocados Jalmich</div>
+        <div style="color:var(--text-dim);">Agribusiness SME</div>
+        <div style="color:var(--text-dim);">Demand forecasting</div>
+        <div style="color:var(--accent); font-family:var(--font-mono); font-size:0.9rem;">-35% stockouts</div>
+        <div style="text-align:right; color:var(--text-muted); font-family:var(--font-mono); font-size:0.85rem;">2024</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CASE 1: FINTECH NDA — RECONCILIATION & RECOVERY -->
+<section id="fintech-recovery" class="section" style="scroll-margin-top:80px;">
+  <div class="container">
+    <div class="reveal" style="display:flex; justify-content:space-between; align-items:end; flex-wrap:wrap; gap:1rem; margin-bottom:2rem;">
+      <div>
+        <div style="display:flex; gap:0.5rem; flex-wrap:wrap; margin-bottom:1rem;">
+          <span class="chip chip-accent">01</span>
+          <span class="chip">Fintech · Financial services</span>
+          <span class="chip">Data engineering</span>
+          <span class="chip">Leadership</span>
+          <span class="chip">Under NDA</span>
+        </div>
+        <h2 class="h-section">Fintech (NDA) — reconciliation<br/>engine that recovered 50M+ MXN.</h2>
+      </div>
+      <div style="font-family:var(--font-mono); color:var(--text-muted); font-size:0.82rem;">CASE STUDY · 2025</div>
+    </div>
+
+    <!-- KPI strip -->
+    <div class="surface reveal" style="padding:2rem; display:grid; grid-template-columns:repeat(4,1fr); gap:1.5rem; margin-bottom:2rem;" class="kpi-grid-4">
+      <div><div class="kpi-num accent-text">50M+ MXN</div><div class="kpi-label">Delinquent portfolio recovered</div></div>
+      <div><div class="kpi-num">SQL + Python</div><div class="kpi-label">Automated matching engine</div></div>
+      <div><div class="kpi-num">↓ SLAs</div><div class="kpi-label">New follow-up methodology</div></div>
+      <div><div class="kpi-num">Team lead</div><div class="kpi-label">Mentored entry-level analysts</div></div>
+    </div>
+
+    <div style="display:grid; grid-template-columns:2fr 1fr; gap:2rem;" class="case-grid">
+      <div style="display:grid; gap:2rem;">
+        <div class="reveal">
+          <div class="eyebrow" style="color:#ef4444;">Problem</div>
+          <p style="margin-top:0.75rem; line-height:1.7;">
+            A fast-growing fintech in financial services had a delinquent
+            portfolio that kept expanding — not because recovery was
+            impossible, but because internal records and stakeholder
+            records <em>didn't match</em>. Every conversation with a
+            counterparty stalled on "whose number is right?" Recovery was
+            artisanal, slow, and bottlenecked on individual analyst memory.
+          </p>
+        </div>
+        <div class="reveal">
+          <div class="eyebrow">Approach</div>
+          <p style="margin-top:0.75rem; line-height:1.7;">
+            Build a reconciliation engine first — a single, automated source
+            of truth for every disputed record — and then use its output as
+            leverage in recovery negotiations. In parallel, re-shape how the
+            team operated: new KPIs, tighter SLAs, real documentation, and
+            mentorship for the entry-level analysts who'd own the process.
+          </p>
+        </div>
+        <div class="reveal">
+          <div class="eyebrow">Solution (technical &amp; organizational)</div>
+          <ul style="margin:0.75rem 0 0; padding:0; list-style:none; display:grid; gap:0.6rem; line-height:1.65;">
+            <li style="display:flex; gap:0.6rem;"><span style="color:var(--accent);">▸</span> SQL + Python matching engine reconciling internal vs. stakeholder records automatically</li>
+            <li style="display:flex; gap:0.6rem;"><span style="color:var(--accent);">▸</span> Reconciliation dashboards in Power BI for recovery operators</li>
+            <li style="display:flex; gap:0.6rem;"><span style="color:var(--accent);">▸</span> New KPI framework + follow-up methodology to shorten SLAs</li>
+            <li style="display:flex; gap:0.6rem;"><span style="color:var(--accent);">▸</span> Documentation practices introduced across the conciliation team</li>
+            <li style="display:flex; gap:0.6rem;"><span style="color:var(--accent);">▸</span> Led negotiations with delinquent counterparties using engine output</li>
+            <li style="display:flex; gap:0.6rem;"><span style="color:var(--accent);">▸</span> Represented the team in BI leadership meetings to influence strategy</li>
+          </ul>
+        </div>
+        <div class="reveal">
+          <div class="eyebrow" style="color:var(--accent);">Impact</div>
+          <p style="margin-top:0.75rem; line-height:1.7;">
+            Recovered 50M+ MXN of delinquent portfolio through data-led
+            negotiations. Follow-up SLAs shortened via the new methodology.
+            Reconciliation became a systematic operation instead of depending
+            on individual heroics, and the analyst team was left with clearer
+            KPIs, better documentation, and a playbook they could own.
+          </p>
+        </div>
+      </div>
+
+      <aside class="reveal" style="display:grid; gap:1.25rem; align-content:start;">
+        <div class="terminal">
+          <div class="terminal-head">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            <span style="margin-left:0.75rem; color:var(--text-muted); font-size:0.72rem;">reconcile.py</span>
+          </div>
+          <div class="terminal-body">
+<span class="t-cmt"># automated record matching</span><br/>
+<span class="t-key">def</span> <span class="t-fn">reconcile</span>(internal, stakeholder):<br/>
+&nbsp;&nbsp;matched = <span class="t-fn">join</span>(internal, stakeholder)<br/>
+&nbsp;&nbsp;gaps = <span class="t-fn">find_gaps</span>(matched)<br/>
+&nbsp;&nbsp;<span class="t-key">return</span> gaps.<span class="t-fn">rank</span>(by=<span class="t-str">"recovery_value"</span>)<br/>
+<br/>
+<span class="t-prompt">$</span> python reconcile.py<br/>
+<span class="t-cmt"># &gt; recovered: 50,000,000+ MXN</span>
+          </div>
+        </div>
+        <div class="surface" style="padding:1.5rem;">
+          <div class="eyebrow">Stack</div>
+          <div style="margin-top:0.75rem; display:flex; flex-wrap:wrap; gap:0.4rem;">
+            <span class="chip">SQL</span>
+            <span class="chip">Python</span>
+            <span class="chip">Power BI</span>
+            <span class="chip">ETL</span>
+          </div>
+        </div>
+        <div class="surface" style="padding:1.5rem;">
+          <div class="eyebrow">Engagement</div>
+          <p style="margin:0.5rem 0 0; color:var(--text);">Jan 2025 → Oct 2025 · BI Coordinator &amp; Conciliation Team Lead</p>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- CASE 2: FINTECH NDA — FORECASTING ML + FRAUD DETECTION -->
+<section id="fintech-ml" class="section" style="background:var(--bg-elev); border-top:1px solid var(--border); border-bottom:1px solid var(--border); scroll-margin-top:80px;">
+  <div class="container">
+    <div class="reveal" style="display:flex; justify-content:space-between; align-items:end; flex-wrap:wrap; gap:1rem; margin-bottom:2rem;">
+      <div>
+        <div style="display:flex; gap:0.5rem; flex-wrap:wrap; margin-bottom:1rem;">
+          <span class="chip chip-accent">02</span>
+          <span class="chip">Fintech · Financial services</span>
+          <span class="chip">Production ML</span>
+          <span class="chip">Fraud detection</span>
+          <span class="chip">Under NDA</span>
+        </div>
+        <h2 class="h-section">Fintech (NDA) — forecasting critical<br/>financial flows at &lt;15% MAPE.</h2>
+      </div>
+      <div style="font-family:var(--font-mono); color:var(--text-muted); font-size:0.82rem;">CASE STUDY · 2023 → 2025</div>
+    </div>
+
+    <div class="surface reveal" style="padding:2rem; display:grid; grid-template-columns:repeat(4,1fr); gap:1.5rem; margin-bottom:2rem;" class="kpi-grid-4">
+      <div><div class="kpi-num accent-text">&lt;15%</div><div class="kpi-label">MAPE on production forecasts</div></div>
+      <div><div class="kpi-num">End-to-end</div><div class="kpi-label">ML pipeline in production</div></div>
+      <div><div class="kpi-num">Real-time</div><div class="kpi-label">Fraud alerts to risk team</div></div>
+      <div><div class="kpi-num">Multi-ETL</div><div class="kpi-label">Operational &amp; financial pipelines</div></div>
+    </div>
+
+    <div style="display:grid; grid-template-columns:2fr 1fr; gap:2rem;" class="case-grid">
+      <div style="display:grid; gap:2rem;">
+        <div class="reveal">
+          <div class="eyebrow" style="color:#ef4444;">Problem</div>
+          <p style="margin-top:0.75rem; line-height:1.7;">
+            The client — a fintech operating in financial services — was
+            planning critical cash flows by hand. Forecasts were late, noisy,
+            and siloed in spreadsheets. In parallel, fraud was being spotted
+            <em>after</em> the fact: suspicious transactions surfaced only in
+            next-day reports, and the risk team had no early-warning signal
+            to act on.
+          </p>
+        </div>
+        <div class="reveal">
+          <div class="eyebrow">Approach</div>
+          <p style="margin-top:0.75rem; line-height:1.7;">
+            Two tracks ran in parallel. The first: an end-to-end ML pipeline
+            that took the forecasting work out of spreadsheets and into
+            production. The second: an automated fraud-detection layer that
+            turned scattered transaction data into real-time alerts the risk
+            team could act on. Both built to be owned, not rented.
+          </p>
+        </div>
+        <div class="reveal">
+          <div class="eyebrow">Solution (technical)</div>
+          <ul style="margin:0.75rem 0 0; padding:0; list-style:none; display:grid; gap:0.6rem; line-height:1.65;">
+            <li style="display:flex; gap:0.6rem;"><span style="color:var(--accent);">▸</span> End-to-end forecasting pipeline: ingestion → features → model → delivery</li>
+            <li style="display:flex; gap:0.6rem;"><span style="color:var(--accent);">▸</span> Supervised ML models tuned for critical financial-flow horizons</li>
+            <li style="display:flex; gap:0.6rem;"><span style="color:var(--accent);">▸</span> Automated fraud detection: SQL/Python rules flagging suspicious user transactions in real time</li>
+            <li style="display:flex; gap:0.6rem;"><span style="color:var(--accent);">▸</span> Email-based alerting wired directly to the risk team's workflow</li>
+            <li style="display:flex; gap:0.6rem;"><span style="color:var(--accent);">▸</span> Full income analytics lifecycle for a fintech subsidiary</li>
+            <li style="display:flex; gap:0.6rem;"><span style="color:var(--accent);">▸</span> Multiple ETL processes for operational and financial teams, with the relevant KPIs baked in</li>
+            <li style="display:flex; gap:0.6rem;"><span style="color:var(--accent);">▸</span> Compliance-sensitive automations reducing processing time and human error</li>
+          </ul>
+        </div>
+        <div class="reveal">
+          <div class="eyebrow" style="color:var(--accent);">Impact</div>
+          <p style="margin-top:0.75rem; line-height:1.7;">
+            Operational planning moved from manual guesswork to forecasts
+            running consistently under 15% MAPE. Fraud exposure dropped as
+            the risk team moved from next-day reporting to real-time
+            notifications. Compliance-sensitive processes ran faster, with
+            less human error and lower regulatory risk — and the income
+            analytics program shipped insights that shaped strategy at the
+            fintech subsidiary.
+          </p>
+        </div>
+      </div>
+
+      <aside class="reveal" style="display:grid; gap:1.25rem; align-content:start;">
+        <div class="terminal">
+          <div class="terminal-head">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            <span style="margin-left:0.75rem; color:var(--text-muted); font-size:0.72rem;">forecast_pipeline.py</span>
+          </div>
+          <div class="terminal-body">
+<span class="t-cmt"># end-to-end forecasting</span><br/>
+X, y = <span class="t-fn">build_features</span>(flows)<br/>
+model.<span class="t-fn">fit</span>(X, y)<br/>
+y_hat = model.<span class="t-fn">predict</span>(X_next)<br/>
+<span class="t-fn">publish</span>(y_hat, to=<span class="t-str">"ops"</span>)<br/>
+<br/>
+<span class="t-prompt">$</span> python forecast_pipeline.py<br/>
+<span class="t-cmt"># &gt; MAPE = 0.142 · prod</span>
+          </div>
+        </div>
+        <div class="surface" style="padding:1.5rem;">
+          <div class="eyebrow">Stack</div>
+          <div style="margin-top:0.75rem; display:flex; flex-wrap:wrap; gap:0.4rem;">
+            <span class="chip">Python</span>
+            <span class="chip">SQL</span>
+            <span class="chip">Azure</span>
+            <span class="chip">Databricks</span>
+            <span class="chip">Power BI</span>
+            <span class="chip">ML libraries</span>
+          </div>
+        </div>
+        <div class="surface" style="padding:1.5rem;">
+          <div class="eyebrow">Engagement</div>
+          <p style="margin:0.5rem 0 0; color:var(--text);">Oct 2023 → Jan 2025 · Data Scientist</p>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- CASE 3: ARRENDAMEX -->
+<section id="arrendamex" class="section" style="scroll-margin-top:80px;">
+  <div class="container">
+    <div class="reveal" style="display:flex; justify-content:space-between; align-items:end; flex-wrap:wrap; gap:1rem; margin-bottom:2rem;">
+      <div>
+        <div style="display:flex; gap:0.5rem; flex-wrap:wrap; margin-bottom:1rem;">
+          <span class="chip chip-accent">03</span>
+          <span class="chip">Leasing · Fintech</span>
+          <span class="chip">Data architecture</span>
+          <span class="chip">Digital transformation</span>
+          <span class="chip" style="color:var(--accent); background:var(--accent-soft); border-color:rgba(52,211,153,0.25);">In progress</span>
+        </div>
+        <h2 class="h-section">Arrendamex — building the data<br/>foundation for a leasing fintech.</h2>
+      </div>
+      <div style="font-family:var(--font-mono); color:var(--text-muted); font-size:0.82rem;">CASE STUDY · 2025 → present</div>
+    </div>
+
+    <div class="surface reveal" style="padding:2rem; display:grid; grid-template-columns:repeat(4,1fr); gap:1.5rem; margin-bottom:2rem;" class="kpi-grid-4">
+      <div><div class="kpi-num accent-text">0 → 1</div><div class="kpi-label">Data architecture, end-to-end</div></div>
+      <div><div class="kpi-num">ETL/ELT</div><div class="kpi-label">Pipelines shipped to production</div></div>
+      <div><div class="kpi-num">BI</div><div class="kpi-label">Foundation standardized across teams</div></div>
+      <div><div class="kpi-num">Data Scientist</div><div class="kpi-label">Lead role on data & analytics</div></div>
+    </div>
+
+    <div style="display:grid; grid-template-columns:2fr 1fr; gap:2rem;" class="case-grid">
+      <div style="display:grid; gap:2rem;">
+        <div class="reveal">
+          <div class="eyebrow" style="color:#ef4444;">Problem</div>
+          <p style="margin-top:0.75rem; line-height:1.7;">
+            Arrendamex — a Mexican leasing fintech — was going through a
+            digital transformation with no mature data infrastructure in place.
+            Reporting was manual, workflows were fragmented across teams, and
+            there was no scalable way to unlock analytics adoption company-wide.
+          </p>
+        </div>
+        <div class="reveal">
+          <div class="eyebrow">Approach</div>
+          <p style="margin-top:0.75rem; line-height:1.7;">
+            Leading the design and implementation of the company's data
+            architecture end-to-end: ETL/ELT pipelines, the warehouse
+            foundation, and a standardized BI layer that every team can build
+            on. The goal isn't a dashboard — it's a <em>foundation</em> that
+            scales with the business.
+          </p>
+        </div>
+        <div class="reveal">
+          <div class="eyebrow">Solution (technical)</div>
+          <ul style="margin:0.75rem 0 0; padding:0; list-style:none; display:grid; gap:0.6rem; line-height:1.65;">
+            <li style="display:flex; gap:0.6rem;"><span style="color:var(--accent);">▸</span> Target data architecture: sources → warehouse → analytics-ready models → BI</li>
+            <li style="display:flex; gap:0.6rem;"><span style="color:var(--accent);">▸</span> ETL/ELT pipelines on Azure + Databricks, orchestrated and monitored</li>
+            <li style="display:flex; gap:0.6rem;"><span style="color:var(--accent);">▸</span> Analytics-ready data models for leasing operations, finance, and risk</li>
+            <li style="display:flex; gap:0.6rem;"><span style="color:var(--accent);">▸</span> Power BI standards: semantic layer, roles, reusable datasets</li>
+            <li style="display:flex; gap:0.6rem;"><span style="color:var(--accent);">▸</span> Automations replacing manual reporting and spreadsheet workflows</li>
+            <li style="display:flex; gap:0.6rem;"><span style="color:var(--accent);">▸</span> Enablement &amp; documentation so teams can build on the foundation</li>
+          </ul>
+        </div>
+        <div class="reveal">
+          <div class="eyebrow" style="color:var(--accent);">Impact (to date)</div>
+          <p style="margin-top:0.75rem; line-height:1.7;">
+            Arrendamex now has a working data architecture, first ETL/ELT
+            pipelines in production, and a BI foundation operational teams
+            actually use. Reporting that used to live in spreadsheets is
+            automated; data-driven decisions are replacing gut-feel in
+            operations and finance. Engagement is ongoing.
+          </p>
+        </div>
+      </div>
+
+      <aside class="reveal" style="display:grid; gap:1.25rem; align-content:start;">
+        <div class="data-panel">
+          <div style="padding:1rem 1.25rem; display:flex; align-items:center; justify-content:space-between; border-bottom:1px solid var(--border);">
+            <div style="display:flex; align-items:center; gap:0.6rem;">
+              <span class="chip chip-accent">LIVE</span>
+              <span style="font-family:var(--font-mono); font-size:0.82rem; color:var(--text-dim);">arrendamex.data_platform</span>
+            </div>
+          </div>
+          <div class="panel-row"><span class="k">sources</span><span class="v">operational · financial · risk</span><span class="pill">connected</span></div>
+          <div class="panel-row"><span class="k">pipelines</span><span class="v">ETL/ELT · orchestrated</span><span class="pill">prod</span></div>
+          <div class="panel-row"><span class="k">warehouse</span><span class="v">azure · databricks</span><span class="pill">healthy</span></div>
+          <div class="panel-row"><span class="k">consumers</span><span class="v">Power BI · teams</span><span class="pill">live</span></div>
+          <div class="panel-row"><span class="k">adoption</span><span class="v">ops · finance · growing</span><span class="pill">ongoing</span></div>
+        </div>
+        <div class="surface" style="padding:1.5rem;">
+          <div class="eyebrow">Stack</div>
+          <div style="margin-top:0.75rem; display:flex; flex-wrap:wrap; gap:0.4rem;">
+            <span class="chip">Azure</span>
+            <span class="chip">Databricks</span>
+            <span class="chip">Power BI</span>
+            <span class="chip">Python</span>
+            <span class="chip">SQL</span>
+            <span class="chip">ETL/ELT</span>
+          </div>
+        </div>
+        <div class="surface" style="padding:1.5rem;">
+          <div class="eyebrow">Engagement</div>
+          <p style="margin:0.5rem 0 0; color:var(--text);">Oct 2025 → present · Data Scientist · leading data &amp; analytics</p>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- CASE 4: INVERAVOCADOS JALMICH -->
+<section id="inveravocados" class="section" style="background:var(--bg-elev); border-top:1px solid var(--border); border-bottom:1px solid var(--border); scroll-margin-top:80px;">
+  <div class="container">
+    <div class="reveal" style="display:flex; justify-content:space-between; align-items:end; flex-wrap:wrap; gap:1rem; margin-bottom:2rem;">
+      <div>
+        <div style="display:flex; gap:0.5rem; flex-wrap:wrap; margin-bottom:1rem;">
+          <span class="chip chip-accent">04</span>
+          <span class="chip">Agribusiness SME</span>
+          <span class="chip">Forecasting</span>
+          <span class="chip">Streamlit</span>
+        </div>
+        <h2 class="h-section">Inveravocados Jalmich — harvest &amp;<br/>distribution forecasting operators use.</h2>
+      </div>
+      <div style="font-family:var(--font-mono); color:var(--text-muted); font-size:0.82rem;">CASE STUDY · 2024</div>
+    </div>
+
+    <div class="surface reveal" style="padding:2rem; display:grid; grid-template-columns:repeat(4,1fr); gap:1.5rem; margin-bottom:2rem;" class="kpi-grid-4">
+      <div><div class="kpi-num accent-text">-35%</div><div class="kpi-label">Stockouts</div></div>
+      <div><div class="kpi-num">+19%</div><div class="kpi-label">Gross margin</div></div>
+      <div><div class="kpi-num">4,200</div><div class="kpi-label">SKUs forecasted weekly</div></div>
+      <div><div class="kpi-num">82%</div><div class="kpi-label">Weekly forecast accuracy (MAPE-based)</div></div>
+    </div>
+
+    <div style="display:grid; grid-template-columns:2fr 1fr; gap:2rem;" class="case-grid">
+      <div style="display:grid; gap:2rem;">
+        <div class="reveal">
+          <div class="eyebrow" style="color:#ef4444;">Problem</div>
+          <p style="margin-top:0.75rem; line-height:1.7;">
+            Inveravocados Jalmich ran a growing avocado export & distribution
+            business on gut-feel planning. Stockouts at packing and
+            downstream distribution lost them ~8% of potential revenue
+            quarterly. Previous forecasting attempts lived in an analyst's
+            notebook and never got adopted by operations.
+          </p>
+        </div>
+        <div class="reveal">
+          <div class="eyebrow">Approach</div>
+          <p style="margin-top:0.75rem; line-height:1.7;">
+            I spent a week on-site shadowing packing and logistics leads.
+            The forecasting model wasn't the hard part — the hard part was
+            designing an interface operators would open on a Monday morning
+            and actually <em>trust</em>.
+          </p>
+        </div>
+        <div class="reveal">
+          <div class="eyebrow">Solution (technical)</div>
+          <ul style="margin:0.75rem 0 0; padding:0; list-style:none; display:grid; gap:0.6rem; line-height:1.65;">
+            <li style="display:flex; gap:0.6rem;"><span style="color:var(--accent);">▸</span> Daily harvest + inventory + distribution pipeline into Snowflake via Azure Data Factory</li>
+            <li style="display:flex; gap:0.6rem;"><span style="color:var(--accent);">▸</span> Hierarchical forecasting: LightGBM with seasonality + harvest-cycle features</li>
+            <li style="display:flex; gap:0.6rem;"><span style="color:var(--accent);">▸</span> Weekly retraining pipeline + automated accuracy scorecards</li>
+            <li style="display:flex; gap:0.6rem;"><span style="color:var(--accent);">▸</span> Streamlit app: SKU × destination forecast, override + justify workflow</li>
+            <li style="display:flex; gap:0.6rem;"><span style="color:var(--accent);">▸</span> WhatsApp / Slack alerts for expected stockouts 7 days out</li>
+          </ul>
+        </div>
+        <div class="reveal">
+          <div class="eyebrow" style="color:var(--accent);">Impact</div>
+          <p style="margin-top:0.75rem; line-height:1.7;">
+            35% fewer stockouts. 19% margin improvement from better
+            inventory turns. 92% of operations leads open the app on Monday
+            mornings. Inveravocados Jalmich now uses the platform as a
+            selling point with buyers and distribution partners.
+          </p>
+        </div>
+      </div>
+
+      <aside class="reveal" style="display:grid; gap:1.25rem; align-content:start;">
+        <div class="terminal">
+          <div class="terminal-head">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            <span style="margin-left:0.75rem; color:var(--text-muted); font-size:0.72rem;">forecast_eval.py</span>
+          </div>
+          <div class="terminal-body">
+<span class="t-cmt"># weekly accuracy scorecard</span><br/>
+<span class="t-key">for</span> site <span class="t-key">in</span> sites:<br/>
+&nbsp;&nbsp;mape = <span class="t-fn">eval</span>(site, horizon=7)<br/>
+&nbsp;&nbsp;<span class="t-key">if</span> mape &gt; <span class="t-str">0.22</span>:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;alerts.<span class="t-fn">notify</span>(site.lead)<br/>
+<br/>
+<span class="t-prompt">$</span> python forecast_eval.py<br/>
+<span class="t-cmt"># avg MAPE = 0.18 · 4,200 SKUs</span>
+          </div>
+        </div>
+        <div class="surface" style="padding:1.5rem;">
+          <div class="eyebrow">Stack</div>
+          <div style="margin-top:0.75rem; display:flex; flex-wrap:wrap; gap:0.4rem;">
+            <span class="chip">Snowflake</span>
+            <span class="chip">ADF</span>
+            <span class="chip">LightGBM</span>
+            <span class="chip">MLflow</span>
+            <span class="chip">Streamlit</span>
+          </div>
+        </div>
+        <div class="surface" style="padding:1.5rem;">
+          <div class="eyebrow">Duration</div>
+          <p style="margin:0.5rem 0 0; color:var(--text);">7 weeks · quarterly model review retainer</p>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section">
+  <div class="container">
+    <div class="surface reveal" style="padding:clamp(2rem, 5vw, 3.5rem); text-align:center;">
+      <span class="eyebrow">Your turn</span>
+      <h2 class="h-section" style="max-width:640px; margin:1rem auto;">Next case study could be yours.</h2>
+      <p style="color:var(--text-dim); max-width:520px; margin:0 auto 2rem; line-height:1.6;">
+        30-minute intro call. No pitch deck — just a real conversation about
+        what to build next.
+      </p>
+      <a href="contact.html" class="btn btn-accent" style="padding:1rem 1.5rem; font-size:1rem;">Book an intro call →</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer style="border-top:1px solid var(--border); padding:3rem 0 2rem; background:var(--bg-elev);">
+  <div class="container">
+    <div style="display:grid; grid-template-columns:2fr 1fr 1fr 1fr; gap:2rem;" class="footer-grid">
+      <div>
+        <div style="display:flex; align-items:center; gap:0.6rem; margin-bottom:0.75rem;">
+          <span class="logo-mark">DC</span>
+          <span style="font-weight:600;">Dan Castillo</span>
+        </div>
+        <p style="color:var(--text-dim); font-size:0.9rem; max-width:320px; line-height:1.6;">
+          Analytics Engineer & Data Scientist.<br/>
+          Building end-to-end data systems for startups, fintech, and SMEs.
+        </p>
+      </div>
+      <div>
+        <div style="font-family:var(--font-mono); font-size:0.72rem; color:var(--text-muted); letter-spacing:0.1em; margin-bottom:0.75rem;">NAVIGATION</div>
+        <a href="services.html" style="display:block; color:var(--text-dim); padding:0.25rem 0;">Services</a>
+        <a href="work.html" style="display:block; color:var(--text-dim); padding:0.25rem 0;">Work</a>
+        <a href="about.html" style="display:block; color:var(--text-dim); padding:0.25rem 0;">About</a>
+        <a href="contact.html" style="display:block; color:var(--text-dim); padding:0.25rem 0;">Contact</a>
+      </div>
+      <div>
+        <div style="font-family:var(--font-mono); font-size:0.72rem; color:var(--text-muted); letter-spacing:0.1em; margin-bottom:0.75rem;">ELSEWHERE</div>
+        <a href="https://www.linkedin.com/in/daniel-alejandro-castillo-mart%C3%ADn-713504219/" target="_blank" rel="noopener noreferrer" style="display:block; color:var(--text-dim); padding:0.25rem 0;">LinkedIn</a>
+        <a href="https://github.com/dancmartin11" target="_blank" rel="noopener noreferrer" style="display:block; color:var(--text-dim); padding:0.25rem 0;">GitHub</a>
+      </div>
+      <div>
+        <div style="font-family:var(--font-mono); font-size:0.72rem; color:var(--text-muted); letter-spacing:0.1em; margin-bottom:0.75rem;">CONTACT</div>
+        <a href="mailto:danc.martin11@gmail.com" style="display:block; color:var(--text-dim); padding:0.25rem 0;">danc.martin11@gmail.com</a>
+        <a href="contact.html" style="display:block; color:var(--accent); padding:0.25rem 0;">Book a call →</a>
+      </div>
+    </div>
+    <div class="divider" style="margin:2.5rem 0 1.5rem;"></div>
+    <div style="display:flex; justify-content:space-between; align-items:center; gap:1rem; flex-wrap:wrap; font-size:0.82rem; color:var(--text-muted);">
+      <div>© <span id="year"></span> Dan Castillo · Built with intent.</div>
+      <div style="font-family:var(--font-mono);">v1.0 · Designed for conversion.</div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/main.js"></script>
+<style>
+  @media (max-width: 960px) {
+    .case-grid { grid-template-columns: 1fr !important; }
+    .kpi-grid-4 { grid-template-columns: repeat(2,1fr) !important; }
+    .idx-row { grid-template-columns: 2fr 1fr 100px !important; font-size: 0.82rem; }
+    .idx-row > div:nth-child(2), .idx-row > div:nth-child(3) { display:none; }
+    .footer-grid { grid-template-columns: 1fr 1fr !important; }
+  }
+</style>
+</body>
+</html>
